@@ -1,0 +1,26 @@
+\BOOKMARK [0][-]{chapter*.1}{Lista\040de\040Figuras}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Resumo}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 3
+\BOOKMARK [0][-]{chapter.abstract.1}{Introdução}{}% 4
+\BOOKMARK [0][-]{chapter.abstract.2}{Metodologia}{}% 5
+\BOOKMARK [0][-]{chapter.abstract.3}{Problema\040do\040Caixeiro\040Viajante\040-\040TSP\)}{}% 6
+\BOOKMARK [1][-]{section.abstract.3.1}{Problema dos Múltiplos Caixeiros Viajantes }{chapter.abstract.3}% 7
+\BOOKMARK [0][-]{chapter.abstract.4}{Algoritmos genéticos}{}% 8
+\BOOKMARK [1][-]{section.abstract.4.1}{Operadores\040de\040cruzamento}{chapter.abstract.4}% 9
+\BOOKMARK [2][-]{subsection.abstract.4.1.1}{Cruzamento\040de\040Mapeamento\040Parcial\040-\040PMX}{section.abstract.4.1}% 10
+\BOOKMARK [1][-]{section.abstract.4.2}{Operador de mutação}{chapter.abstract.4}% 11
+\BOOKMARK [1][-]{section.abstract.4.3}{Algoritmo Genético Híbrido}{chapter.abstract.4}% 12
+\BOOKMARK [0][-]{chapter.abstract.5}{Estado\040da\040Arte}{}% 13
+\BOOKMARK [0][-]{chapter.abstract.6}{Algoritmo\040Nearest-Neighbor\040\(NN\)}{}% 14
+\BOOKMARK [0][-]{chapter.abstract.7}{Desenvolvimento}{}% 15
+\BOOKMARK [1][-]{section.abstract.7.1}{Estrutura do cromossomo \(indivíduo\) - two-part}{chapter.abstract.7}% 16
+\BOOKMARK [1][-]{section.abstract.7.2}{Avaliação do Indivíduo \(fitness\)}{chapter.abstract.7}% 17
+\BOOKMARK [1][-]{section.abstract.7.3}{Cruzamento}{chapter.abstract.7}% 18
+\BOOKMARK [1][-]{section.abstract.7.4}{Mutação}{chapter.abstract.7}% 19
+\BOOKMARK [1][-]{section.abstract.7.5}{Parâmetros}{chapter.abstract.7}% 20
+\BOOKMARK [1][-]{section.abstract.7.6}{Desempenho}{chapter.abstract.7}% 21
+\BOOKMARK [0][-]{chapter.abstract.8}{Conclusão}{}% 22
+\BOOKMARK [0][-]{chapter.abstract.8}{Referências Bibliográficas}{}% 23
+\BOOKMARK [0][-]{chapter.appendix.A}{Apêndice A – Código Fonte - main.cpp}{}% 24
+\BOOKMARK [0][-]{chapter.appendix.B}{Apêndice B – Código Fonte - ga.h}{}% 25
+\BOOKMARK [0][-]{chapter.appendix.C}{Apêndice C – Código Fonte - ga.cpp}{}% 26
