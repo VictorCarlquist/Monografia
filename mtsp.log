@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2014.4.24)  27 MAY 2014 14:00
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2014.9.22)  24 SEP 2014 19:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **mtsp.tex
 (./mtsp.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 3 languages loaded.
+Babel <3.9h> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texmf/tex/latex/abntex/abnt.cls
 (/usr/share/texmf/tex/latex/abntex/cvs-id.def
 Invalid UTF-8 byte or sequence at line 19 replaced by U+FFFD.
@@ -1027,31 +1027,31 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 ) (./mtsp.aux)
 \openout1 = `mtsp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 48.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 48.
 
 (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1059,7 +1059,7 @@ Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count184
 \AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring OFF on input line 49.
+Package hyperref Info: Link coloring OFF on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1069,94 +1069,99 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count185
 )
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 
 (./mtsp.out) (./mtsp.out)
 \@outlinefile=\write3
 \openout3 = `mtsp.out'.
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 53.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 52.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 53.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 52.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 53.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 52.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 53.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 52.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 53.
+(Font)              <12> on input line 52.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 53.
+(Font)              <9> on input line 52.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 53.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 53.
+(Font)              <7> on input line 52.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 52.
 
 [0
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 54.
  [1]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 62.
+(Font)              <14.4> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 62.
+(Font)              <10.95> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 62.
+(Font)              <8> on input line 61.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 76.
  [2
 
-] (./mtsp.toc
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 77.
+ [3] (./mtsp.toc
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 20.
- [3
+ [4
 
 
 ])
@@ -1164,112 +1169,112 @@ Package babel Info: Redefining portuges shorthand "|
 \openout4 = `mtsp.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 79.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 82.
- [4]
+(babel)             in language  on input line 79.
+ [5]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 83.
  (./mtsp.lof)
 \tf@lof=\write5
 \openout5 = `mtsp.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 90.
- [5
-
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 90.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 94.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 85.
  [6
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 96.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 89.
  [7
+
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 93.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 93.
+ [8
 
 
 ]
 Cap\'{\i }tulo 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 109.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 115.
-[8
+(babel)             in language  on input line 109.
+[9
 
 ]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 115.
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 117
+(babel)             in language  on input line 109.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 111.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.4> on input line 111.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 111.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 111.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 111.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 111.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 115
 .
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 121.
- [9
+(babel)             in language  on input line 122.
+ [10
 
 ]
 Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 121.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 123.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.4> on input line 123.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 123.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 153.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 156.
-[10
+(babel)             in language  on input line 157.
+[11
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
- [11]
+(babel)             in language  on input line 162.
+ [12]
 Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 171.
-[12
+(babel)             in language  on input line 175.
+[13
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 173.
+(babel)             in language  on input line 178.
 File: img/pmx.png Graphic file (type QTm)
  <use  "img/pmx.png" >
 File: img/pmx2.png Graphic file (type QTm)
@@ -1278,86 +1283,90 @@ File: img/pmx2.png Graphic file (type QTm)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 202.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 202.
+[14]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 200.
-[13]
+(babel)             in language  on input line 202.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 203.
+(babel)             in language  on input line 208.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 210.
- [14]
+(babel)             in language  on input line 214.
+ [15]
 Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 233.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 233.
-[15
+[16
 
 ]
 Cap\'{\i }tulo 6.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 233.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 242.
+(babel)             in language  on input line 241.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 242.
-[16
+(babel)             in language  on input line 241.
+[17
 
 ]
 Cap\'{\i }tulo 7.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 242.
+(babel)             in language  on input line 241.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 247.
-File: img/two-part.png Graphic file (type QTm)
-<use  "img/two-part.png" >
+(babel)             in language  on input line 256.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 264.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 269.
+(babel)             in language  on input line 268.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 269.
- [17
+(babel)             in language  on input line 268.
+[18
 
 ]
+File: img/two-part.png Graphic file (type QTm)
+ <use  "img/two-part.png" >
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 283.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 288.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 282.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 293.
+(babel)             in language  on input line 299.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 293.
- [18]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 304.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 310.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 310.
+(babel)             in language  on input line 299.
  [19]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 299.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 314.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 314.
+ [20]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 321.
 File: img/ga-nn.png Graphic file (type QTm)
  <use  "img/ga-nn.png" >
-File: img/ga-ale.png Graphic file (type QTm)
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: img/ga-ale.png Graphic file (type QTm)
 <use  "img/ga-ale.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 386.
+(babel)             in language  on input line 403.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 386.
-[20]
+(babel)             in language  on input line 403.
+[21]
 File: img/output1.png Graphic file (type QTm)
  <use  "img/output1.png" >
 
@@ -1384,200 +1393,219 @@ File: img/output-nn-4.png Graphic file (type QTm)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
-[21]
+(babel)             in language  on input line 446.
+[22]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
- [22]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 446.
  [23]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 446.
  [24]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 446.
  [25]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 446.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 446.
+ [26]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 446.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 446.
+ [27]
 Cap\'{\i }tulo 8.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 429.
+(babel)             in language  on input line 446.
 (./mtsp.bbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
- [26
+ [28
 
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
-)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 443.
- [27
+(babel)             in language  on input line 99.
+ [29
 
-]
+])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 459.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 459.
+ [30]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 443.
+(Font)              <20.74> on input line 459.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 443.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 459.
 
 Apendice A.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 459.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 443.
+(hyperref)                removing `math shift' on input line 459.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -2.00043pt
-(hyperref)                removed on input line 443.
+(hyperref)                removed on input line 459.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 443.
+(hyperref)                removing `math shift' on input line 459.
 
 (../code/algo_genetico_comum/agc/agc/main.cpp
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 60.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 60.
- [28
+ [31
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
- [29])
+(babel)             in language  on input line 132.
+ [32]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 445.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 445.
- [30]
+(babel)             in language  on input line 200.
+ [33])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 461.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 461.
+ [34]
 Apendice B.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 445.
+(babel)             in language  on input line 461.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 445.
+(hyperref)                removing `math shift' on input line 461.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -2.00043pt
-(hyperref)                removed on input line 445.
+(hyperref)                removed on input line 461.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 445.
+(hyperref)                removing `math shift' on input line 461.
 
 (../code/algo_genetico_comum/agc/agc/ga.h
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 61.
- [31
+(babel)             in language  on input line 60.
+ [35
 
 ])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 463.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 447.
- [32]
+(babel)             in language  on input line 463.
+ [36]
 Apendice C.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 463.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 447.
+(hyperref)                removing `math shift' on input line 463.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -2.00043pt
-(hyperref)                removed on input line 447.
+(hyperref)                removed on input line 463.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 447.
+(hyperref)                removing `math shift' on input line 463.
 
 (../code/algo_genetico_comum/agc/agc/ga.cpp
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 60.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 60.
- [33
+ [37
 
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 132.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 132.
- [34]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 205.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 205.
- [35]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 278.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 278.
- [36]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 351.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 351.
- [37]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 423.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 423.
  [38]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 205.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 205.
+ [39]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 278.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 278.
+ [40]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 351.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 351.
+ [41]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 424.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 424.
+ [42]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 497.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 497.
 
-[39])
+[43]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 570.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 570.
+ [44])
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 450.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 466.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 450.
+(babel)             in language  on input line 466.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 450.
-[40]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 450.
+(babel)             in language  on input line 466.
+[45]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 466.
  (./mtsp.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 450.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 450.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 466.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 466.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 26496 strings out of 495638
- 466543 string characters out of 6187352
- 815002 words of memory out of 5000000
- 29264 multiletter control sequences out of 15000+600000
- 70702 words of font info for 128 fonts, out of 8000000 for 9000
+ 26632 strings out of 495627
+ 468530 string characters out of 6186773
+ 854966 words of memory out of 5000000
+ 29399 multiletter control sequences out of 15000+600000
+ 70710 words of font info for 129 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 47i,10n,97p,10444b,1805s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,10n,97p,10444b,1864s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mtsp.pdf (41 pages).
+Output written on mtsp.pdf (46 pages).

@@ -2,26 +2,27 @@
 \contentsline {chapter}{Lista de Figuras}{}{chapter*.1}
 \contentsline {chapter}{Resumo}{}{chapter*.2}
 \contentsline {chapter}{Abstract}{}{chapter*.3}
-\contentsline {chapter}{\numberline {1}Introdução}{8}{chapter.abstract.1}
-\contentsline {chapter}{\numberline {2}Metodologia}{9}{chapter.abstract.2}
-\contentsline {chapter}{\numberline {3}Problema do Caixeiro Viajante - TSP)}{10}{chapter.abstract.3}
-\contentsline {section}{\numberline {3.1}Problema dos Múltiplos Caixeiros Viajantes }{11}{section.abstract.3.1}
-\contentsline {chapter}{\numberline {4}Algoritmos genéticos}{12}{chapter.abstract.4}
-\contentsline {section}{\numberline {4.1}Operadores de cruzamento}{13}{section.abstract.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Cruzamento de Mapeamento Parcial - PMX}{13}{subsection.abstract.4.1.1}
-\contentsline {section}{\numberline {4.2}Operador de mutação}{14}{section.abstract.4.2}
-\contentsline {section}{\numberline {4.3}Algoritmo Genético Híbrido}{14}{section.abstract.4.3}
-\contentsline {chapter}{\numberline {5}Estado da Arte}{15}{chapter.abstract.5}
-\contentsline {chapter}{\numberline {6}Algoritmo \textit {Nearest-Neighbor} (NN)}{16}{chapter.abstract.6}
-\contentsline {chapter}{\numberline {7}Desenvolvimento}{17}{chapter.abstract.7}
-\contentsline {section}{\numberline {7.1}Estrutura do cromossomo (indivíduo) - \textit {two-part}}{17}{section.abstract.7.1}
-\contentsline {section}{\numberline {7.2}Avaliação do Indivíduo (\textit {fitness})}{18}{section.abstract.7.2}
-\contentsline {section}{\numberline {7.3}Cruzamento}{18}{section.abstract.7.3}
-\contentsline {section}{\numberline {7.4}Mutação}{18}{section.abstract.7.4}
-\contentsline {section}{\numberline {7.5}Parâmetros}{18}{section.abstract.7.5}
-\contentsline {section}{\numberline {7.6}Desempenho}{19}{section.abstract.7.6}
-\contentsline {chapter}{\numberline {8}Conclusão}{26}{chapter.abstract.8}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{27}{chapter.abstract.8}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Código Fonte - main.cpp}{28}{chapter.appendix.A}
-\contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} Código Fonte - ga.h}{31}{chapter.appendix.B}
-\contentsline {chapter}{Ap\^endice{} C{} -$\tmspace -\thinmuskip {.1667em}$-{} Código Fonte - ga.cpp}{33}{chapter.appendix.C}
+\contentsline {chapter}{\numberline {1}Introdução}{9}{chapter.abstract.1}
+\contentsline {chapter}{\numberline {2}Metodologia}{10}{chapter.abstract.2}
+\contentsline {chapter}{\numberline {3}Problema do Caixeiro Viajante - TSP}{11}{chapter.abstract.3}
+\contentsline {section}{\numberline {3.1}Problema dos Múltiplos Caixeiros Viajantes}{12}{section.abstract.3.1}
+\contentsline {chapter}{\numberline {4}Algoritmos genéticos}{13}{chapter.abstract.4}
+\contentsline {section}{\numberline {4.1}Operadores de cruzamento}{14}{section.abstract.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Cruzamento de Mapeamento Parcial - PMX}{14}{subsection.abstract.4.1.1}
+\contentsline {section}{\numberline {4.2}Operador de mutação}{15}{section.abstract.4.2}
+\contentsline {section}{\numberline {4.3}Algoritmo Genético Híbrido}{15}{section.abstract.4.3}
+\contentsline {chapter}{\numberline {5}Estado da Arte}{16}{chapter.abstract.5}
+\contentsline {chapter}{\numberline {6}Algoritmo \textit {Nearest-Neighbor} (NN)}{17}{chapter.abstract.6}
+\contentsline {chapter}{\numberline {7}Desenvolvimento}{18}{chapter.abstract.7}
+\contentsline {section}{\numberline {7.1}\textit {Nearest-Neighbor} alterado}{18}{section.abstract.7.1}
+\contentsline {section}{\numberline {7.2}Estrutura do cromossomo (indivíduo) - \textit {two-part}}{18}{section.abstract.7.2}
+\contentsline {section}{\numberline {7.3}Avaliação do Indivíduo (\textit {fitness})}{19}{section.abstract.7.3}
+\contentsline {section}{\numberline {7.4}Cruzamento}{19}{section.abstract.7.4}
+\contentsline {section}{\numberline {7.5}Mutação}{20}{section.abstract.7.5}
+\contentsline {section}{\numberline {7.6}Parâmetros}{20}{section.abstract.7.6}
+\contentsline {section}{\numberline {7.7}Desempenho}{21}{section.abstract.7.7}
+\contentsline {chapter}{\numberline {8}Conclusão}{28}{chapter.abstract.8}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{29}{chapter.abstract.8}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Código Fonte - main.cpp}{31}{chapter.appendix.A}
+\contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} Código Fonte - ga.h}{35}{chapter.appendix.B}
+\contentsline {chapter}{Ap\^endice{} C{} -$\tmspace -\thinmuskip {.1667em}$-{} Código Fonte - ga.cpp}{37}{chapter.appendix.C}

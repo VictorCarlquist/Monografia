@@ -8,10 +8,10 @@
 
 %%%%% Dados para criação da capa e folha de rosto %%%%
 \autor{Victor Hugo Carlquist da Silva}
-\titulo{Desenvolvimento de um Algoritmo Genético Otimizado para a solução do problema dos Múltiplos Caixeiros Viajantes (\textit{mTSP})}
+\titulo{Desenvolvimento de um Algoritmo Genético Híbrido para a solução do problema dos Múltiplos Caixeiros Viajantes (\textit{mTSP})}
 \orientador{Prof. Me. André Malvezzi Lopes}
 \coorientador{Prof. Dr. Silvio Alexandre de Araujo}
-\comentario{Proposta de Trabalho de Conclusão de Curso do 5º semestre do curso Tecnologia em Análise e Desenvolvimento de Sistemas na matéria Projeto Integrado I.}
+\comentario{Trabalho de Conclusão de Curso em Tecnologia em Análise e Desenvolvimento de Sistemas.}
 \instituicao{Instituto Federal de Educação, Ciência e Tecnologia de São Paulo -- \textit{campus} Campos do Jordão}
 \local{Campos do Jordão, SP}
 \data{\today}
@@ -45,7 +45,6 @@ escapeinside = {\%*}{*)}, % Permite adicionar comandos LaTeX dentro do seu códi
 morekeywords     ={*,USE,GO} % Se quiser adicionar mais palavras-chave
 }
 
-
 \begin{document}
 	%\bibliographystyle{plain}
 	% Para utilizar o formato padrão de capa da ABNT, substituí o comando \maketitle pelo comando \capa.
@@ -59,9 +58,9 @@ morekeywords     ={*,USE,GO} % Se quiser adicionar mais palavras-chave
 	\setlength{\ABNTsignthickness}{1pt}
 	\begin{center} 
 		VICTOR HUGO CARLQUIST DA SILVA \\~\\
-		\large{\textbf{Desenvolvimento de um Algoritmo Genético Otimizado para a solução do problema dos Múltiplos Caixeiros Viajantes (\textit{mTSP})}}
+		\large{\textbf{DESENVOLVIMENTO DE UM ALGORITMO GENÉTICO HÍBRIDO PARA A SOLUÇÃO DO PROBLEMA DOS MÚLTIPLOS CAIXEIROS VIAJANTES (\textit{mTSP})}}
 	\end{center}
-	Proposta de Trabalho de Conclusão de Curso do 5º semestre do curso Tecnologia em Análise e Desenvolvimento de Sistemas na matéria Projeto Integrado I.
+	Trabalho de Conclusão de Curso em Tecnologia em Análise e Desenvolvimento de Sistemas.
 	
 	\begin{center}
 		~\\~
@@ -71,8 +70,6 @@ morekeywords     ={*,USE,GO} % Se quiser adicionar mais palavras-chave
 	\assinatura*{\textbf{Profª. Dra. Thalita Biazzuz Veronese}\\ Instituto Federal de Educação, Ciência e Tecnologia}\\
 	\assinatura*{\textbf{Prof. Paulo Giovani de Faria Zeferino}\\Instituto Federal de Educação, Ciência e Tecnologia}\\~\\~\\
 	
-	
-	
 	\textbf{LOCAL}\\
 	
 	Instituto Federal de Educação, Ciência e Tecnologia de São Paulo -- IFSP\\ \textit{Campus} Campos do Jordão \\ Campos do Jordão, SP
@@ -80,9 +77,7 @@ morekeywords     ={*,USE,GO} % Se quiser adicionar mais palavras-chave
 	\end{folhadeaprovacao}
 	
 	\sumario 
-	
 
-	
 	%\listadetabelas
 	
 	\listadefiguras
@@ -94,40 +89,46 @@ morekeywords     ={*,USE,GO} % Se quiser adicionar mais palavras-chave
 	\end{resumo}
 
 	\begin{abstract}
-		The high complexity to define the best route for multiple vehicles motivate a development for a new algorithm to solve this problem. This problem is known as multiple Traveling Salesman Problem (\textit{mTSP}). It was created a hybrid algorithm using Genetic Algorithm with Dijkstra's Algorithm. Executing and analysing results of the software, it shows very efficient to solve this problem.  
+		The high complexity to define the best route for multiple vehicles motivate a development for a new algorithm to solve this problem. This problem is known as multiple Traveling Salesman Problem (\textit{mTSP}). It was created a hybrid algorithm using Genetic Algorithm with NN Algorithm. Executing and analysing results of the software, it shows very efficient to solve the mTSP.  
 	\end{abstract}
 
 	\chapter{Introdução}
 		
-		Hoje em dia o transporte veicular tornou-se algo de suma importância, 
-		impactando tanto positivamente quanto negativamente na sociedade e no meio ambiente, principalmente na economia mundial. 
+		A importância do transporte veicular nos dias de hoje causa impactos positivos e negativos 
+		na sociedade e no meio ambiente, principalmente na economia mundial \cite{meioAmbiente}. 
 		
 		Apesar de agilizar o transporte de pessoas e  de mercadorias, 
-		os veículos também geram despesas com combustível, manutenção, etc. 
+		os veículos também geram despesas com combustível e manutenção, entre outros fatores. 
 		Se um veículo percorrer uma menor rota, a empresa diminui custos, com, por exemplo, 
 		combustível, manutenção e tempo de entrega.
 
-		Cada vez as cidades estão ficando maiores e a complexidade rodoviária cresce, dificultando a
-		análise da melhor rota a se percorrer. Esse problema tende a ficar mais complexo conforme 
-		aumenta a quantidade de veículos que a empresa possui. Com isso, surge a necessidade de criar 
-		\textit{softwares} cada vez mais robustos que resolvam o problema de roteirização de veículos, encontrando o melhor caminho para chegar aos seus objetivos.
+		O crescimento das cidades e da complexidade rodoviária dificulta a análise da melhor rota a se percorrer. Esse problema tende a ficar mais complexo conforme aumenta a quantidade de veículos que a empresa possui. Com isso, surge a necessidade de criar 
+		\textit{softwares} cada vez mais robustos que resolvam o problema de roteirização de veículos, encontrando o melhor caminho para os veículos percorrer, realizando suas entregas nestes pontos já pré-estabelecidos.
+
 
 	\chapter{Metodologia}
 
-		A metodologia utilizada para o desenvolvimento desta pesquisa é de natureza aplicada e exploratória, sendo baseada em referências bibliográficas e em experimentos. Para os experimentos e comparações, será utilizado a base de testes chamada TSPLIB desenvolvida para o Problema do Caixeiro Viajante (TSP), disponível em \url{http://www.math.uwaterloo.ca/tsp/world/countries.html}, já que não foi possível encontrar uma base de testes específica para o MTSP. Esta base se baseia em informações geográficas do \textit{National Imagery and Mapping Agency} \cite{tsplib}.
-	
-		O objetivo é desenvolver um novo algoritmo, que encontre a rota ótima, ou quase ótima, para múltiplos caixeiros viajantes, consumindo menos recurso computacional, mais especificamente o tempo de execução. O experimento será empírico, utilizando diversas configurações de cenário, comparando o tamanho das rotas e o tempo de execução no Algoritmo Genético ``tradicional'' com o algoritmo proposto. 
+		O objetivo deste trabalho é desenvolver um novo algoritmo, ou otimizar um algoritmo, para que encontrasse a rota ótima\footnote{Quando a rota gerada por um algoritmo é o menor caminho possível, essa rota é considerada uma ``rota ótima''.} ou quase ótima, para o problema dos múltiplos caixeiros viajantes, consumindo menos recurso computacional, mais especificamente o tempo de execução. 
 
-	\chapter{Problema do Caixeiro Viajante - TSP)}
-		O problema do Caixeiro Viajante (\textit{Traveling Salesman Problem} - TSP) consiste em estabelecer uma rota que passe por cada vértice do grafo apenas uma vez e retorne ao vértice de partida. O número de rotas possíveis pode ser expressa por $(n-1)!$, sendo $n$ o número de pontos.
-		O problema TSP é classificado como \textit{NP-Hard}\footnote{\cite{0015-pdf}}, ou seja, não existe algoritmo com limitação polinominal capaz de resolvê-lo \cite{0010-pdf}. 
+		Antes de se iniciar o desenvolvimento do algoritmo híbrido, foi realizado o levantamento bibliográfico sobre o assunto e debatido como otimiza-lo com o orientador do projeto.
+
+		Foi utilizado a base de testes TSPLIB desenvolvida para o Problema do Caixeiro Viajante (TSP) \footnote{Disponível em \url{http://www.math.uwaterloo.ca/tsp/world/countries.html}}, já que não foi possível encontrar uma base de testes específica para o MTSP. Esta base de testes foi utilizada como referência para medir o desempenho das rotas e o tempo de execução do algoritmo híbrido desenvolvido\footnote{O TSPLIB se baseia em informações geográficas do \textit{National Imagery and Mapping Agency}} \cite{tsplib}.
+
+		Para exemplificar, foi escolhido um teste da base TSPLIB que já possuí resultados de outros algoritmos, como a distância encontrada e o tempo que o algoritmo levou para entrar a rota. O teste foi submetido ao algoritmo híbrido os resultados que ele gerou foram comparados com os resultados da base TSPLIB.
+
+		Após esses testes foram utilizados diversas configurações de cenário, modificando os parâmetros do Algoritmo Genético, que serão explicado neste trabalho, comparando o tamanho das rotas e o tempo de execução do Algoritmo Genético ``tradicional'' com o algoritmo híbrido para verificar a eficiência e eficacia do algoritmo híbrido. 
+
+	
+	\chapter{Problema do Caixeiro Viajante - TSP}
+		O problema do Caixeiro Viajante (\textit{Traveling Salesman Problem} - TSP) consiste em estabelecer uma rota para um \textbf{único} caixeiro, passando por cada vértice do grafo apenas uma vez e retorne ao vértice de partida. O número de rotas possíveis pode ser expressa por $(n-1)!$, sendo $n$ o número de pontos.
+		O problema TSP é classificado como \textit{NP-Hard}\cite{0015-pdf}, ou seja, não existe algoritmo com limitação polinominal capaz de resolvê-lo \cite{0010-pdf}. 
 		
 		Este problema pode ser formulado da seguinte forma:
 		\begin{equation}
  		   	min\sum_{i=1}^{n} \sum_{j=1}^{n} c_{ij} x_{ij}
 		\end{equation}
 		
-então		
+		então		
 		\begin{equation}
 			\label{form}
  		   	\sum_{i=1}^{n} x_{ij} = 1 \quad j=1,\dots,n
@@ -137,9 +138,8 @@ então
  		   	\sum_{j=1}^{n} x_{ij} = 1 \quad i=1,\dots,n
 		\end{equation}
 		\begin{equation}
-		
 		\label{form-2}
- 		   	\{(i,j)|i,j=2,\dots,n; x_{ij}=1\} ~\text{não contem sub-rotas,}
+ 		   	\{(i,j)|i,j=2,\dots,n; x_{ij}=1\} ~\text{não contém sub-rotas,}
 		\end{equation}
 		
 		\begin{equation}
@@ -148,33 +148,36 @@ então
 		\end{equation}
 		
 			
-		Para um grafo  $G=(V,A)$, onde $V$ é o conjunto de vértices e $A$  é o conjunto de arestas, sendo $C = (C_{ij})$ a matriz que corresponde ao custo associado com $A$. A matriz $C$ é simétrica caso $c_{ij}=c_{ji},\forall(i,j) \in A$ e assimétrica caso contrário. A variável $x_{ij}$ é binário, usado para indicar se a aresta foi usada na rota. As equações \ref{form} e \ref{form-1}, criam uma restrição, para que haja um caminho de entrada e um caminho de saída para cada cidade. Já a equação \ref{form-2} previne sub-rotas, ou seja, não permite um grafo desconexo \cite{dissertation}.
+		Para um grafo  $G=(V,A)$, onde $V$ é o conjunto de vértices e $A$  é o conjunto de arestas, sendo $C = (C_{ij})$ a matriz que corresponde ao custo associado com $A$. A matriz $C$ é simétrica caso $c_{ij}=c_{ji},\forall(i,j) \in A$ e assimétrica caso contrário. A variável $x_{ij}$ é binária, usada para indicar se a aresta foi usada na rota. As equações \ref{form} e \ref{form-1} criam uma restrição, para que haja um caminho de entrada e um caminho de saída para cada cidade. Já a equação \ref{form-2} previne sub-rotas, ou seja, não permite um grafo desconexo \cite{dissertation}
+	
+	\section{Problema dos Múltiplos Caixeiros Viajantes}
 
-		
-	\section{Problema  dos Múltiplos Caixeiros Viajantes }
+		O problema dos Múltiplos Caixeiros Viajantes (\textit{Multiple Traveling Salesman Problem - mTSP}) é uma extensão do TSP citado na sessão anterior.
+		Neste problemas há mais de um caixeiro que precisar visitar um conjunto de vértices, sendo que não é permitido um caixeiro visitar uma vértice que o outro caixeiro já visitou, estabelecendo várias rotas, uma para cada caixeiro viajante.
 
-	O problema dos Múltiplos Caixeiros Viajantes (\textit{Multiple Traveling Salesman Problem - mTSP}) consiste em estabelecer várias rotas, uma para cada caixeiro
-	, sendo que cada um pode estar em lugares diferentes, passando por cada vértice do grafo apenas uma vez e retornando ao seu vértice de partida. 
+		Sendo assim, o Problema dos Múltiplos Caixeiros Viajantes torna-se  mais complexo conforme o número de caixeiros aumenta, porque é necessário distribuir os vértices (cidades) da melhor possível para cada caixeiro, tentando reduzir o tamanho das rotas. 
+
+		O algoritmo híbrido desenvolvido leva em consideração o tamanho da rota global, não importando o tamanho da rota de cada caixeiro, ou seja, o algoritmo híbrido não tenta igualar o tamanho das rotas entre os caixeiros  \cite{dissertation}.
 	
 	\chapter{Algoritmos genéticos}
 
-		Segundo \citeonline{0008-pdf}, os Algoritmos Genéticos (AG) são técnicas de procura e otimização baseados em mecanismos de seleção natural. 
+		Segundo \citeonline{0008-pdf}, os Algoritmos Genéticos (AGs) são técnicas de procura e otimização baseadas em mecanismos de seleção natural. 
 
-		Nas décadas de 60 e 70, John Holland e seus colegas da Universidade de Michigan criaram modelos para estudar o processo de adaptação dos seres vivos. Holland realizou diversas pesquisas e em 1975 publicou o seu livro intitulado \textit{Adaptation in Natural and Artificial System}. Hoje, este livro é considerado um dos mais importantes sobre Algoritmos Genéticos \cite{0001-pdf}.
+		Nas décadas de 60 e 70, John Holland e seus colegas da Universidade de Michigan criaram modelos para estudar o processo de adaptação dos seres vivos. Holland realizou diversas pesquisas e em 1975 publicou o seu livro intitulado \textit{Adaptation in Natural and Artificial System} \cite{john}. Hoje, este livro é considerado um dos mais importantes sobre Algoritmos Genéticos \cite{0001-pdf}.
 
-		No Algoritmo Genético, o cromossomo é uma estrutura de dados (um conjunto de genes) que armazena uma possível solução de um problema. Sendo que cada indivíduo tem um cromossomo, os indivíduos são cruzados gerando novos indivíduos, conforme a população cresce, surgem indivíduos cada vez mais aptos, sendo que um deles será o mais apto, contendo no seu cromossomo a solução do problema.
+		No Algoritmo Genético, o cromossomo, também chamado de indivíduo, é representado por um conjunto de genes que armazena uma possível solução de um problema. Cada gene possui um valor que representa um vértice do grafo, sendo assim, os indivíduos são cruzados gerando novos indivíduos com sequência de genes (vértices) diferentes. Conforme a população cresce, surgem indivíduos cada vez mais aptos, ou seja, armazenam em seus cromossomos uma solução para o problema cada vez melhor, sendo que um deles será o mais apto, contendo no seu cromossomo a solução do problema, portanto, este indivíduo terá a melhor sequência de vértices, entre os indivíduos da população, pelo qual o caixeiro deverá passar.
 
-		O Algoritmo Genético possuí alguns parâmetros importantes para configurar a evolução dos indivíduos, tais como, o tamanho da população, que indica quantos indivíduos existirá para realizar o cruzamento. Se o número da população for pequena deixará o desempenho da solução lenta, pois terá um pequeno conjunto para a busca de solução do problema. Já uma população muito grande pode afetar o desempenho do algoritmo. O outro parâmetro é a \textbf{taxa de cruzamento}, que controla as chances de ocorrer um cruzamento, gerando novos indivíduos. E por último, a \textbf{taxa de mutação}, que define as chances de um cromossomo sofrer mutação. Uma alta taxa de mutação irá deixar o algoritmo aleatório, mas com uma baixa taxa previne que os indivíduos sejam sempre os mesmos.
+		O Algoritmo Genético possui alguns parâmetros importantes para configurar a evolução dos indivíduos, por exemplo, o tamanho da população, que indica quantos indivíduos existirão para realizar o cruzamento. Se o número da população for pequena deixará as rotas ruins (muito grandes), pois terá um pequeno conjunto para a busca da solução do problema. Já uma população muito grande pode afetar o desempenho do algoritmo, também  existe a \textbf{taxa de mutação}, que define as chances de um cromossomo sofrer mutação. Uma alta taxa de mutação irá deixar o algoritmo aleatório, mas com uma baixa taxa previne que os indivíduos sejam sempre os mesmos. É preciso salientar que estes parâmetros são pertinente ao algoritmo e não ao modelo matemático.
 
 		\section{Operadores de cruzamento}
 
-			Os operadores de cruzamento definem como ocorrerá o cruzamento entre dois indivíduos \cite{0012-pdf}.
+			Os operadores de cruzamento definem como ocorrerá o cruzamento entre dois indivíduos, ou seja, como será a feita a troca de uma sequência de genes entre dois indivíduos, gerando novos indivíduos na população \cite{0012-pdf}.
 
-			Neste trabalho será abordado o Cruzamento de Mapeamento Parcial, que foi utilizado no software.
+			Neste trabalho foi utilizado o Cruzamento de Mapeamento Parcial, que foi utilizado no algoritmo híbrido.
 
 		\subsection{Cruzamento de Mapeamento Parcial - PMX} 
 			\label{Spmx}
-			O operador de Cruzamento de Mapeamento Parcial (\textit{Partially-mapped crossover} - PMX)  seleciona e copia três genes do pai para um filho e completa o restante cromossomo com os genes do outro pai, como a \textbf{figura~\ref{pmx}} demonstra.
+			O operador de Cruzamento de Mapeamento Parcial (\textit{Partially-mapped crossover} - PMX)  seleciona e copia três genes do pai para um filho e completa o restante do cromossomo com os genes do outro pai, como a \textbf{figura~\ref{pmx}} demonstra.
 
 			\begin{figure}[h]
 				\centering
@@ -184,7 +187,7 @@ então
 		        \label{pmx}
 	   		\end{figure}
 
-	   		Caso o cromossomo já possua o mesmo número, é escolhido outro número com o mesmo índice do pai que não esteja no cromossomo (\textbf{figura~\ref{pmx2}}):
+	   		Caso o cromossomo já possua o mesmo número, é escolhido outro número com o mesmo índice do pai que não esteja no cromossomo:
 	   		\begin{figure}[h]
 				\centering
 		        \includegraphics[width = 14cm,keepaspectratio]{img/pmx2.png}
@@ -193,8 +196,8 @@ então
 		        \label{pmx2}
 	   		\end{figure}
 
-	   		Por exemplo, como o ``filho 1'' já possui o número 1, então pesquisa-se em qual posição do número 1 está neste vetor, no caso da \textbf{figura~\ref{pmx2}} o número 1 está na posição 4, então copia-se o número que está na posição 4 no vetor do ``pai 1'' para o filho. Já no outro exemplo na mesma figura, na terceira posição do vetor do ``filho 2'', tenta-se preencher com o número 5, mas, como o número 5 já existe no vetor do ``filho 2'', então pega-se o valor na mesma posição que está o número 5, que no caso é o número 6, mas o número 6 também já existe, e sua posição remete ao número 8 na sexta posição, e finalmente é preenchido a terceira posição. 
-	   		Este processo descrito acima é repetido para todos os outros elementos vazios dos filhos.
+	   		Por exemplo, como o ``filho 1'' já possui o valor 1, então é pesquisado qual a posição que o valor 1 está neste vetor, no caso da \textbf{figura~\ref{pmx2}} o valor 1 está na posição 4, então o valor na posição 4 do vetor do ``pai 1'' é copiado para a posição 1 do vetor ``filho 1''. No outro exemplo na mesma figura, na terceira posição do vetor do ``filho 2'',  o número 5 já existe na posição 5, sendo assim, o valor que está na posição 5 no vetor ``pai 2'' é o valor 6, mas este valor também existe do vetor ``filho 2'', portanto é pesquisado a posição do valor 6 no vetor ``filho 2'', que neste caso é a posição 6, então copia-se o valor 8 que está na posição 6 do vetor ``pai 2'' para a terceira posição do vetor ``filho 2''. 
+	   		Este processo descrito acima é repetido para todos os outros elementos vazios\footnote{Os valores vazios são representados pelos caracteres ``x'' na \textbf{figura~\ref{pmx}}} dos filhos.
 	   		  
 		\section{Operador de mutação}
 			\label{Sem}
@@ -204,20 +207,15 @@ então
 
 		\section{Algoritmo Genético Híbrido}
 
-			Os Algoritmos  Genéticos possuem o objetivo de serem robusto, mas, estes algoritmos têm dificuldade em encontrar o caminho ótimo, devido ao processo de avaliação do cromossomo e realização de bons cruzamentos. 
-			Para solucionar esse problema foi criado os Algoritmos Genéticos Híbridos.
+			Os Algoritmos  Genéticos possuem o objetivo de serem robustos, ou seja, são eficientes nas soluções de problemas com complexidade \textit{NP-HARD}, mas, estes algoritmos têm dificuldade em encontrar o caminho ótimo. Para solucionar esse problema foram criados os Algoritmos Genéticos Híbridos.
 
-			Os Algoritmos Genéticos Híbridos consistem em utilizar um outro método em conjunto com o Algoritmo Genético, produzindo algoritmos eficientes na prática.
+			Os Algoritmos Genéticos Híbridos consistem em utilizar um outro algoritmo em conjunto com o Algoritmo Genético, produzindo algoritmos eficientes na prática \cite{TravelingTheory}.
 			
-			\chapter{Estado da Arte}
+		\chapter{Estado da Arte}
 		
 			Existem diversos trabalhos sobre a utilização de Algoritmos Genéticos na resolução do problema do TSP.
-			Segundo \citeonline{0002-pdf}, que criou uma implementação para resolver este problema, mostrou que os Algoritmos Genéticos não são eficientes 
-			na resolução do TSP em comparação com métodos exatos. Neste trabalho o AG levou mais tempo e não encontrou a solução ótima em comparação com 
-			algoritmos exatos.
-
-			A utilização de AGs mostrou-se mais eficiente na resolução do \textit{mTSP} do que na resolução do TSP,  
-			levando-se em conta um maior tempo de processamento para o caso mais complexo.
+			Segundo \citeonline{0002-pdf}, implementaram uma solução para este problema, os Algoritmos Genéticos não são eficientes 
+			na resolução do TSP em comparação com métodos algoritmos determinísticos. Neste trabalho o Algoritmo Genético foi executado em um período de tempo maior e não encontrou a solução ótima em comparação com algoritmos determinísticos.
 
 			A solução apresentada por \citeonline{0006-pdf} propõe resolver os problemas de roteirização de 
 			veículos com entregas fracionadas, problema clássico de roteirização de veículos e com 
@@ -228,22 +226,39 @@ então
 
 			Na proposta  apresentada por \citeonline{0011-pdf} para a resolução do \textit{mTSP} com um depósito, foi criado um único cromossomo utilizando o método \textit{two-part}, que será explicado na próxima seção. Este método mostrou-se muito eficiente.
 
-			O \citeonline{0005-pdf}  mostra que é possível calcular as rotas de múltiplos veículos utilizando AG para igualar o tempo 
+			\citeonline{0005-pdf}  mostra que é possível calcular as rotas de múltiplos veículos utilizando AG para igualar o tempo 
 			de espera de encomendas de clientes, sendo que a variável ``menor tempo da rota'' não é levada em consideração.
 
 
 		\chapter{Algoritmo \textit{Nearest-Neighbor} (NN)}
 
-			O Algoritmo \textit{Nearest-Neighbor} (NN) é classificado como um algoritmo guloso, ou seja, ele preza pela menor rota localmente, sem se preocupar com o desempenho da rota globalmente.
-			O NN é um algoritmo simples de se implementar, sua única tarefa é verificar qual dos pontos ao seu redor esta mais próximo e escolhê-lo para a rota, após esse passo é repetido o mesmo processo para este ponto escolhido. Mas há um problema, este algoritmo possui uma complexidade muito alta, $O(n!)$, pois faz a comparação com todos os pontos ainda não visitados, sendo inviável sua utilização para muitos pontos \cite{NN}.
-			
-			Para resolver este problema, o plano cartesiano foi dividido em 4 áreas de tamanhos iguais, sendo que o número de áreas pode ser alterado, com isso, pode-se aplicar o NN em cada área reduzindo assim a complexidade para, na melhor hipótese, $(\frac{n}{k}!)k$, sendo $n$ o número total de pontos e $k$ o número de áreas e na pior hipótese $n!$. 
-			
-			O número de áreas sempre deve ser par, e o plano cartesiano sempre terá duas linhas, por exemplo, caso o número de áreas for definido em 8 partes, então a primeira linha do plano cartesiano terá 4 áreas de tamanhos iguais e a segundo linha também terá 4 áreas de tamanhos iguais totalizando 8 áreas.
-		
+			O Algoritmo \textit{Nearest-Neighbor} (NN) é classificado como um algoritmo guloso\footnote{Um algoritmo guloso preza pela menor rota localmente, sem se preocupar com o desempenho da rota globalmente}.
+
+			O NN é um algoritmo simples implementação, sua única tarefa é verificar selecionar um ponto e verificar quais pontos ao seu redor esta mais próximo deste e coloca-lo como próximo ponto á ser visitado. Após esse passo é repetido o mesmo processo para este ponto escolhido. 
+
+			O Algoritmo NN possuí possui uma alta complexidade, $O((n-1)!)$, pois faz a comparação com todos os pontos ainda não visitados, sendo inviável sua utilização para muitos pontos \cite{NN}.
+	
 		\chapter{Desenvolvimento}
 		
-		O Algoritmo Genético Híbrido proposto, utiliza os conceitos do Algoritmo Genético tradicional em conjunto com o algoritmo  \textit{Nearest-Neighbor} (NN). O algoritmo \textit{Nearest-Neighbor} é utilizado para gerar apenas um indivíduo na população inicial, os outros indivíduos são gerados aleatoriamente.
+		O Algoritmo Genético Híbrido proposto, utiliza os conceitos do Algoritmo Genético tradicional em conjunto com o algoritmo  \textit{Nearest-Neighbor} (NN).
+
+		Foi necessário criar um Algoritmo Genético Híbrido porque após os primeiros teste utilizando apenas o Algoritmo Genético foi possível notar que o Algoritmo Genético não era eficiente, pois gerava rotas grandes (aproximadamente 72 vezes maior que a menor rota no TSPLIB). Para solucionar este problema, foi adicionado o algoritmo \textit{Nearest-Neighbor}. 
+
+		%ISSO DEVERA MUDAR APOS A IMPLEMENTAÇÃO DE TODA A POPULAÇÃO FOR GERADA POR NN
+		%ISSO DEVERA MUDAR APOS A IMPLEMENTAÇÃO DE TODA A POPULAÇÃO FOR GERADA POR NN
+		%ISSO DEVERA MUDAR APOS A IMPLEMENTAÇÃO DE TODA A POPULAÇÃO FOR GERADA POR NN
+		%ISSO DEVERA MUDAR APOS A IMPLEMENTAÇÃO DE TODA A POPULAÇÃO FOR GERADA POR NN
+		%ISSO DEVERA MUDAR APOS A IMPLEMENTAÇÃO DE TODA A POPULAÇÃO FOR GERADA POR NN
+		%ISSO DEVERA MUDAR APOS A IMPLEMENTAÇÃO DE TODA A POPULAÇÃO FOR GERADA POR NN
+		%ISSO DEVERA MUDAR APOS A IMPLEMENTAÇÃO DE TODA A POPULAÇÃO FOR GERADA POR NN
+		O algoritmo \textit{Nearest-Neighbor} é utilizado para gerar apenas um indivíduo na população inicial, os outros indivíduos são gerados aleatoriamente.
+		
+		\section {\textit{Nearest-Neighbor} alterado}
+
+		Como já citado o Algoritmo NN possui uma alta complexidade. Para resolver este problema, o plano cartesiano foi dividido em 4 áreas de tamanhos iguais, sendo que o número de áreas pode ser alterado. 
+		Com isso, pode-se aplicar o NN em cada area, sendo assim, os pontos de uma area não podem ser comparados com os pontos de outras areas reduzindo assim a complexidade para, na melhor hipótese, $(\frac{n}{k}-1)!k$, sendo $n$ o número total de pontos e $k$ o número de áreas e na pior hipótese $n!$. 
+		
+		O número de áreas sempre deve ser par, e o plano cartesiano sempre terá duas linhas, por exemplo, caso o número de áreas for definido em 8 partes, então a primeira linha do plano cartesiano terá 4 áreas de tamanhos iguais e a segundo linha também terá 4 áreas de tamanhos iguais totalizando 8 áreas.
 		
 		
 		\section{Estrutura do cromossomo (indivíduo) - \textit{two-part}}
@@ -433,8 +448,7 @@ então
 	 Por meio desta pesquisa preliminar pode-se concluir que o Algoritmo Genético Híbrido desenvolvido é eficiente e economiza um tempo significativo de execução, mas ainda, não gera o resultado pretendido, pois suas rotas ainda são grandes comparadas com a base de teste \textit{TSPLIB}.
 	 
 	 O objetivo futuro é implementar diversos outros algoritmos para gerar a população inicial mais otimizada, já que o problema está neste, pois o indivíduo gerado pelo algoritmo \textit{Nearest-Neighbor} é muito superior à qualquer outro indivíduo gerado de forma aleatória, limitando a evolução da população, já que qualquer cruzamento entre estes indivíduos tem uma probabilidade remota de gerar um filho melhor que o indivíduo gerado pelo \textit{Nearest-Neighbor}.
-		
-		
+
 %\begin{comment}
 		%\section{Modelagem real}
 		%\chapter{Conclusão}
