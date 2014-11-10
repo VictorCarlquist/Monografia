@@ -55,6 +55,11 @@ Dispon{\'\i}vel em:
   rmsp e seus impactos ambientais.
 \emph{Jovens Pesquisadores}, Janeiro 2009.}
 
+\bibitem[Helsgaun 2007]{LKH}
+\abntrefinfo{Helsgaun}{HELSGAUN}{2007}
+{HELSGAUN, K. \emph{An Effective Implementation of K-opt Moves for the
+  Lin-Kernighan TSP Heuristic}. [S.l.]: Roskilde University, 2007.}
+
 \bibitem[Holland 1975]{john}
 \abntrefinfo{Holland}{HOLLAND}{1975}
 {HOLLAND, J.~H. \emph{Adaptation in Natural and Artificial Systems}. [S.l.]:
@@ -89,6 +94,11 @@ Dispon{\'\i}vel em:
 {SEDIGHPOUR, M.; YOUSEFIKHOSHBAKHT, M.; DARANI, N.~M. An effective genetic
   algorithm for solving the multiple traveling salesman problem.
 \emph{Journal of Optimization in Industrial Engineering}, p. 73--79, 2011.}
+
+\bibitem[Silberschatz 2008]{THREAD}
+\abntrefinfo{Silberschatz}{SILBERSCHATZ}{2008}
+{SILBERSCHATZ, A. \emph{Sistemas operacionais com Java}. [S.l.]: Elsevier,
+  2008.}
 
 \bibitem[Wu 2007]{0005-pdf}
 \abntrefinfo{Wu}{WU}{2007}
