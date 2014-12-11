@@ -82,7 +82,7 @@ backgroundcolor = \color{white}, % Cor de fundo
 showspaces = false, % Exibe espaços com um sublinhado
 showstringspaces = false, % Sublinha espaços em Strings
 showtabs = false, % Exibe tabulação com um sublinhado
-frame = trbl, % Envolve o código com uma moldura, pode ser single ou trBL
+frame = , % Envolve o código com uma moldura, pode ser single ou trBL
 rulecolor = \color{black}, % Cor da moldura
 tabsize = 2, % Configura tabulação em x espaços
 captionpos = b, % Posição do título pode ser t (top) ou b (bottom)
@@ -90,9 +90,9 @@ breaklines = true, % Configura quebra de linha automática
 breakatwhitespace= false, % Configura quebra de linha
 %title = \lstname, % Exibe o nome do arquivo incluido
 %caption = \lstname, % Também é possível usar caption no lugar de title
-keywordstyle = \color{blues}, % Estilo das palavras chaves
-commentstyle = \color{greens}, % Estilo dos Comentários
-stringstyle = \color{reds}, % Estilo de Strings
+keywordstyle = \color{black}, % Estilo das palavras chaves
+commentstyle = \color{black}, % Estilo dos Comentários
+stringstyle = \color{black}, % Estilo de Strings
 escapeinside = {\%*}{*)}, % Permite adicionar comandos LaTeX dentro do seu código
 morekeywords     ={*,USE,GO} % Se quiser adicionar mais palavras-chave
 }
@@ -1838,7 +1838,6 @@ Geração Tamanho
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand*\numer{N"o}
-
 \begin{document}
 	%\bibliographystyle{plain}
 	% Para utilizar o formato padrão de capa da ABNT, substituí o comando \maketitle pelo comando \capa.
@@ -1846,18 +1845,29 @@ Geração Tamanho
 	\imprimircapa
 	\imprimirfolhaderosto
 	\folhadeaprovacaoteste
+    \listoffigures*
+    \cleardoublepage
 	\tableofcontents
+   
 	\newpage
 
 	\begin{resumo}
-		A alta complexidade para definir a melhor rota para diversos veículos estimula o desenvolvimento de novos algoritmos computacionais para resolver este problema. Este problema pode ser definido como o problema dos múltiplos caixeiros viajantes (\textit{Multiple Traveling Salesman Problem} (MTSP)). Portanto, foi proposto a criação de um algoritmo híbrido utilizando o Algoritmo Genético com o algoritmo \textit{Nearest Neighbor} (NN), dividindo o espaço dos objetivos para otimizar o cruzamento dos indivíduos, diminuindo assim o número de gerações necessárias para conseguir uma rota ótimo, ou eficiente.
-		%O resultado deste novo algoritmo será comparado com o Algoritmo Genético ``tradicional''
+        Neste trabalho é abordado o desenvolvimento de um algoritmo que consiga gerar uma solução eficiente para o Problema dos Múltiplos Caixeiros Viajantes.
+        Foi desenvolvido um algoritmo híbrido, utilizando o Algoritmo Genético com o algoritmo \textit{Nearest Neighbor}, que foi utilizado para gerar a população inicial, obtendo um bom desempenho no tempo de execução e gerando uma solução eficiente para o Problema dos Múltiplos Caixeiros Viajantes. Todos os testes para validar o algoritmo foram comparados com os resultados da base de testes TSPLIB. 
+        
+        \vspace{\onelineskip}
+        \noindent
+        \textbf{Palavras-chave}: Problema dos múltiplos caixeiros viajantes, algoritmo genético,  algoritmo híbrido, otimização.
 
 	\end{resumo}
 
 	\begin{resumo}[Abstract]
     	\begin{otherlanguage*}{english}
-		The high complexity to define the best route for multiple vehicles motivate a development for a new algorithm to solve this problem. This problem is known as multiple Traveling Salesman Problem (\textit{mTSP}). It was created a hybrid algorithm using Genetic Algorithm with \textit{Nearest Neighbor} Algorithm. Executing and analyzing results of the software, it shows very efficient to solve the mTSP.  
+		This paper shows the development of the algorithm that be able to generate a efficient solution to \textit{Multiple Traveling Salesman Problem} (mTSP). Was developed a hybrid algorithm that use the Genetic Algorithm with \textit{Nearest Neighbor} algorithm, this last algorithm cited, generate the initial population for Genetic Algorithm. This hybrid algorithm get a great performance at execution time and it can generate a good solution to solve \textit{Multiple Traveling Salesman Problem}. To valid the algorithm, the tests was compared against TSPLIB's results.
+
+        \vspace{\onelineskip}
+        \noindent
+        \textbf{Key-words}: Multiple traveling salesman problem, genetic algorithm,  hybrid algorithm, optimization.
 		\end{otherlanguage*}
 	\end{resumo}
 	
@@ -1929,7 +1939,13 @@ Geração Tamanho
 
 		O algoritmo híbrido desenvolvido leva em consideração o tamanho da rota global, mas não leva em consideração o tamanho da rota de cada caixeiro, ou seja, o algoritmo híbrido não tenta igualar o tamanho das rotas entre os caixeiros.
 	
-	\chapter{Algoritmo Genético}
+    \chapter{Algoritmos Evolutivos}
+
+        Os Algoritmos Evolutivos (AE) tentam reproduzir a evolução natural para atingir uma solução ótima. Uma população de soluções é utilizada e modificada a cada iteração, assim o resultado final também é uma população de soluções. Se um problema de otimização tem apenas uma solução ótima, então tenta-se buscar que a população convirja para este único indivíduo ótimo. Caso um problema de otimização possua múltiplas soluções eficientes, como no caso dos Algoritmos Evolutivos Multiobjetivo, os Algoritmos Evolutivos podem ser usadas para encontrar a população final com diversas soluções eficientes \cite{malvezzi}.
+
+        Neste trabalho tenta-se encontrar a melhor solução, ou seja, a que possui a menor rota possível para resolver o Problema dos Múltiplos Caixeiros Viajantes.
+
+	\section{Algoritmo Genético}
 
 		Segundo \citeonline{0008-pdf}, os Algoritmos Genéticos (AGs) são técnicas de procura e otimização baseadas em mecanismos de seleção natural. 
 
@@ -1939,15 +1955,15 @@ Geração Tamanho
 
 		O Algoritmo Genético possui alguns parâmetros importantes para configurar a evolução dos indivíduos, por exemplo, o tamanho da população, que indica quantos indivíduos existirão para realizar o cruzamento. Se o número da população for pequena deixará as rotas ruins (muito grandes), pois terá um pequeno conjunto para a busca da solução do problema. Já uma população muito grande pode afetar o desempenho do algoritmo. Também  existe a \textbf{taxa de mutação}, que define as chances de um cromossomo sofrer mutação. Uma alta taxa de mutação irá deixar o algoritmo aleatório, mas com uma baixa taxa previne que os indivíduos sejam sempre os mesmos. É preciso salientar que estes parâmetros são pertinentes ao algoritmo e não ao modelo matemático.
 
-		\section{Operadores de cruzamento}
+		\subsection{Operadores de cruzamento}
 
 			Os operadores de cruzamento definem como ocorrerá o cruzamento entre dois indivíduos, ou seja, como será feita a troca de uma sequência de genes entre dois indivíduos, gerando novos indivíduos na população \cite{0012-pdf}.
 
 			No algoritmo híbrido foi utilizado o Cruzamento de Mapeamento Parcial.
 
-		\subsection{Cruzamento de Mapeamento Parcial - PMX} 
+		\subsubsection{Cruzamento de Mapeamento Parcial - PMX} 
 			\label{Spmx}
-			O operador de Cruzamento de Mapeamento Parcial (\textit{Partially-mapped crossover} - PMX)  seleciona e copia três genes do pai para um filho e completa o restante do cromossomo com os genes do outro pai, como a \textbf{figura~\ref{pmx}} demonstra.
+			O operador de Cruzamento de Mapeamento Parcial (\textit{Partially-mapped crossover} - PMX)  seleciona e copia três genes do pai para um filho e completa o restante do cromossomo com os genes do outro pai, como a \textbf{figura~\ref{pmx}} ilustra.
 
 			\begin{figure}[h]
 				\centering
@@ -1969,19 +1985,19 @@ Geração Tamanho
 	   		Por exemplo, como o ``filho 1'' já possui o valor 1, então é pesquisado qual a posição que o valor 1 está neste vetor, no caso da \textbf{figura~\ref{pmx2}} o valor 1 está na posição 4, então o valor na posição 4 do vetor do ``pai 1'' é copiado para a posição 1 do vetor ``filho 1''. No outro exemplo na mesma figura, na terceira posição do vetor do ``filho 2'',  o número 5 já existe na posição 5, sendo assim, o valor que está na posição 5 no vetor ``pai 2'' é o valor 6, mas este valor também existe do vetor ``filho 2'', portanto é pesquisado a posição do valor 6 no vetor ``filho 2'', que neste caso é a posição 6, então copia-se o valor 8 que está na posição 6 do vetor ``pai 2'' para a terceira posição do vetor ``filho 2''. 
 	   		Este processo descrito acima é repetido para todos os outros elementos vazios\footnote{Os valores vazios são representados pelos caracteres ``x'' na \textbf{figura~\ref{pmx}}} dos filhos.
 	   		  
-		\section{Operador de mutação}
+		\subsection{Operador de mutação}
 			\label{Sem}
 			O operador de mutação define como será realizada a mutação de um cromossomo, impedindo que o programa sempre gere os mesmos indivíduos (cromossomos) \cite{0012-pdf}.
 
 			Foi implementado no algoritmo proposto o operador de mutação por troca \textit{exchange mutation} (EM). Ele seleciona dois genes, aleatoriamente, do cromossomo e os troca de posição.
 
-		\section{Algoritmo Genético Híbrido}
+		\subsection{Algoritmo Genético Híbrido}
 
 			Os Algoritmos Genéticos possuem o objetivo de serem robustos, ou seja, são eficientes nas soluções de problemas com complexidade \textit{NP-HARD}, mas, estes algoritmos têm dificuldade em encontrar o caminho ótimo. Para solucionar esse problema foram criados os Algoritmos Genéticos Híbridos.
 
 			Os Algoritmos Genéticos Híbridos consistem em utilizar um outro algoritmo em conjunto com o Algoritmo Genético, produzindo algoritmos eficientes na prática \cite{TravelingTheory}.
 
-        \section{Algoritmo \textit{Nearest-Neighbor} (NN)}
+        \subsection{Algoritmo \textit{Nearest-Neighbor} (NN)}
 
             O Algoritmo \textit{Nearest-Neighbor} (NN) é classificado como um algoritmo guloso\footnote{Um algoritmo guloso preza pela menor rota localmente, sem se preocupar com o desempenho da rota globalmente}.
 
@@ -2038,6 +2054,7 @@ Geração Tamanho
 			    \addplot table[x=Geração,y=Tamanho] {AG.csv};\addlegendentry{AG sem NN}
 			    \end{axis}
 			\end{tikzpicture}
+            \caption*{\textbf{Fonte:} Do autor.}
 			\label{graf-agestag}
 		\end{figure}
 
@@ -2067,7 +2084,7 @@ Geração Tamanho
 			    \addplot table[x=Geração,y=Tamanho] {t5.csv};\addlegendentry{AG com NN}
 			    \end{axis}
 			\end{tikzpicture}
-			
+			\caption*{\textbf{Fonte:} Do autor.}
 			\label{figagnn}
 		\end{figure}
 
@@ -2150,7 +2167,7 @@ Geração Tamanho
 
 				\end{tikzpicture}
 				\end{center}
-				
+				\caption*{\textbf{Fonte:} Do autor.}
 				\label{img-two-part}
 			\end{figure}
 
@@ -2203,7 +2220,7 @@ Geração Tamanho
 				    \draw [lb] (03.south) -- ++(0,-1.5) -| (11.south);
 				\end{scope}
 			\end{tikzpicture}
-				\legend{Fonte: O autor.}
+				\caption*{\textbf{Fonte:} Do autor.}
 				\label{two-part}
 			\end{figure}
 			
@@ -2271,7 +2288,7 @@ Geração Tamanho
             \centering
             \caption{Teste utilizando o Algoritmo Genético - Argentina.}
             \includegraphics[width = 8cm,keepaspectratio]{a1.jpg}
-            \legend{Fonte: o autor.}
+            \caption*{\textbf{Fonte:} Do autor.}
             \label{figa1}
         \end{figure}
 
@@ -2283,7 +2300,7 @@ Geração Tamanho
             \centering
             \caption{Teste utilizando o Algoritmo \textit{Nearest-Neighbor} - Argentina.}
             \includegraphics[width = 8cm,keepaspectratio]{ANN0.jpg}
-            \legend{Fonte: o autor.}
+            \caption*{\textbf{Fonte:} Do autor.}
             \label{figANN0}
         \end{figure}		
 
@@ -2293,7 +2310,7 @@ Geração Tamanho
 			\centering
             \caption{Teste utilizando o Algoritmo Genético - China.}
 	        \includegraphics[width = 7cm,keepaspectratio]{t1.jpg}
-	        \legend{Fonte: o autor.}
+	        \caption*{\textbf{Fonte:} Do autor.}
 	        \label{figt1}
    		\end{figure}
 
@@ -2315,20 +2332,21 @@ Geração Tamanho
 			\centering
             \caption{Resultado do teste PR2392 gerado por GANN.}
 		    \includegraphics[width = 8cm,keepaspectratio]{pr.jpg}
-		    \legend{Fonte: o autor.}
+		    \caption*{\textbf{Fonte:} Do autor.}
 		    \label{figpa}
 		\end{figure}
 
 		Foi executado o teste PR2392 (2392 pontos) utilizando o LKH e o GANN, sendo que ambos foram executados no mesmo computador\footnote{Processador Intel\textregistered Core\texttrademark ~i5 2,4Hz com 4GB de memória RAM.}. Neste teste o LKH gerou uma rota com 378.032km em 0,70 segundos, já o algoritmo GANN gerou 481.994,76km em 0,30 segundos (\textbf{figura~\ref{figpa}}).
 		O algoritmo GANN, apesar de não gerar a melhor rota, é eficiente em encontrar uma solução aceitável em um menor tempo.
 
+        \newpage
 		\subsection{Resultados do Problema dos Múltiplos Caixeiros Viajantes (mTSP)}	
+
+        Nas próximas seções será demonstrado os resultados que o algoritmo híbrido desenvolvido obteve em gerar uma solução para o Problema dos Múltiplos Caixeiros Viajantes.
 
 		\subsubsection{Múltiplos Caixeiros - GANN}
 		
-		O Algoritmo Híbrido mostrou-se eficiente na solução do Problema dos Múltiplos Caixeiros Viajantes (mTSP), pois o tempo de execução se manteve o mesmo com diversos caixeiros, apesar da rota aumentar conforme o número de caixeiros aumenta.
-
-		Como a \textbf{figura~\ref{figmult}} apresenta, o tamanho da rota aumenta conforme o número de caixeiros também aumenta. 
+		O Algoritmo Híbrido mostrou-se eficiente na solução do Problema dos Múltiplos Caixeiros Viajantes (mTSP), pois o tempo de execução se manteve o mesmo com diversos caixeiros, em média 175 segundos.
 
 		\begin{figure}[h]
 			\centering
@@ -2358,13 +2376,16 @@ Geração Tamanho
 			    
 			    \end{axis}
 			\end{tikzpicture}
-			\legend{Fonte: o autor.}
+			\caption*{\textbf{Fonte:} Do autor.}
 			\label{figmult}
 		\end{figure}
 
+        Como a \textbf{figura~\ref{figmult}} apresenta, o tamanho da rota aumenta conforme o número de caixeiros também aumenta, porque é necessário adicionar um caminho de saída do depósito e um outro caminho de entrada para cada caixeiro, portanto, quanto maior for o número de caixeiros, mais caminhos de entrada e saída serão adicionados, influenciando no tamanho da rota.
+
+        \newpage
 		\subsubsection{Múltiplos Caixeiros - GA}
 
-		Apesar de que o Algoritmo Genético não é eficiente na solução do Problema dos Múltiplos Caixeiros Viajantes (mTSP), foram realizados testes para verificar o comportamento do algoritmo utilizando apenas o Algoritmo Genético com múltiplos caixeiros viajante.
+		Foram realizados alguns testes para verificar o comportamento do Algoritmo Genético em resolver o Problema dos Múltiplos Caixeiros Viajantes.
 
 		\begin{figure}[h]
 			\centering
@@ -2393,11 +2414,11 @@ Geração Tamanho
 			    \addplot table[x=Geração,y=Tamanho] {t4.csv};\addlegendentry{AG com 8 viajantes}
 			    \end{axis}
 			\end{tikzpicture}
-			\legend{Fonte: o autor.}
+			\caption*{\textbf{Fonte:} Do autor.}
 			\label{figgaga}
 		\end{figure}
 
-		A \textbf{figura~\ref{figgaga}} demonstra que, apesar de que cada teste possui um número de caixeiros diferentes, todos os resultados tem um comportamento semelhante. Vale salientar que o resultado com 8 caixeiros iniciou-se com a maior rota e terminou com o melhor resultado das 3 soluções expostas nesta figura.
+		A \textbf{figura~\ref{figgaga}} ilustra que, apesar de que cada teste possui um número de caixeiros diferentes, todos os resultados tem um comportamento semelhante. Vale salientar que o resultado com 8 caixeiros iniciou-se com a maior rota e terminou com o melhor resultado das 3 soluções expostas nesta figura.
 
 		\subsection{Threads}
 
@@ -2435,7 +2456,7 @@ Geração Tamanho
 				    \addplot table[x=thread,y=tempo] {a9.csv};\addlegendentry{GANN - Teste}
 				    \end{axis}
 				\end{tikzpicture}
-				\legend{Fonte: o autor.}
+				\caption*{\textbf{Fonte:} Do autor.}
 				\label{figthread}
 			\end{figure}
 
