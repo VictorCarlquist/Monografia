@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2014.9.22)  11 DEC 2014 20:05
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2014.9.22)  13 DEC 2014 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,11 +7,7 @@ entering extended mode
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 4 languages loaded.
 (./tcc.cls
-
-LaTeX Warning: You have requested document class `tcc',
-               but the document class provides `matheus'.
-
-Document Class: matheus 2013/04/01 v1.0 Modelo TCC baseado em abnTeX2
+Document Class: tcc 2013/04/01 v1.0 Modelo TCC baseado em abnTeX2
 (/usr/local/share/texmf/tex/latex/abntex2/abntex2.cls
 Document Class: abntex2 2014/01/26 v1.9.2 abnTeX2
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -546,11 +542,11 @@ Headheight and headsep: 14.5pt and 19.8738pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
 Marginparsep and marginparwidth: 7pt and 42.9055pt
-Sidecapsep and sidecapwidth: 7pt and 42pt
-Sidebarhsep and sidebarwidth: 7pt and 42pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
 Sidebarvsep and sidebartopsep: 14.5pt and 0pt
 Sidebarheight: 590.14995pt
-Sidefoothsep and sidefootwidth: 7pt and 42pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
@@ -588,7 +584,13 @@ File: xetex.def 2013/04/29 v0.96 LaTeX color/graphics driver for XeTeX (RRM/JK)
 ))
 \Gin@req@height=\dimen155
 \Gin@req@width=\dimen156
-))
+)
+\c@quadro=\count167
+\c@loqdepth=\count168
+\cftbeforequadroskip=\skip196
+\cftquadroindent=\skip197
+\cftquadronumwidth=\skip198
+)
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2013/05/20 v2.3c Font selection for XeLaTeX and LuaLaTeX
 
@@ -615,18 +617,18 @@ Package: l3seq 2013/12/14 v4623 L3 Sequences and stacks
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3int.sty
 Package: l3int 2013/08/02 v4583 L3 Integers
-\c_max_int=\count167
-\l_tmpa_int=\count168
-\l_tmpb_int=\count169
-\g_tmpa_int=\count170
-\g_tmpb_int=\count171
+\c_max_int=\count169
+\l_tmpa_int=\count170
+\l_tmpb_int=\count171
+\g_tmpa_int=\count172
+\g_tmpb_int=\count173
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3quark.sty
 Package: l3quark 2013/12/14 v4623 L3 Quarks
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prg.sty
 Package: l3prg 2014/01/04 v4642 L3 Control structures
-\g__prg_map_int=\count172
+\g__prg_map_int=\count174
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3clist.sty
 Package: l3clist 2013/07/28 v4581 L3 Comma separated lists
@@ -642,11 +644,11 @@ Package: l3msg 2013/07/28 v4581 L3 Messages
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3file.sty
 Package: l3file 2013/10/13 v4596 L3 File and I/O operations
-\l_iow_line_count_int=\count173
-\l__iow_target_count_int=\count174
-\l__iow_current_line_int=\count175
-\l__iow_current_word_int=\count176
-\l__iow_current_indentation_int=\count177
+\l_iow_line_count_int=\count175
+\l__iow_target_count_int=\count176
+\l__iow_current_line_int=\count177
+\l__iow_current_word_int=\count178
+\l__iow_current_indentation_int=\count179
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty
 Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
@@ -656,13 +658,13 @@ Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
 \l_tmpb_dim=\dimen160
 \g_tmpa_dim=\dimen161
 \g_tmpb_dim=\dimen162
-\c_zero_skip=\skip196
 Normal \skip register pool exhausted, switching to extended pool.
-\c_max_skip=\skip256
-\l_tmpa_skip=\skip257
-\l_tmpb_skip=\skip258
-\g_tmpa_skip=\skip259
-\g_tmpb_skip=\skip260
+\c_zero_skip=\skip256
+\c_max_skip=\skip257
+\l_tmpa_skip=\skip258
+\l_tmpb_skip=\skip259
+\g_tmpa_skip=\skip260
+\g_tmpb_skip=\skip261
 \c_zero_muskip=\muskip11
 \c_max_muskip=\muskip12
 \l_tmpa_muskip=\muskip13
@@ -672,20 +674,20 @@ Normal \skip register pool exhausted, switching to extended pool.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3keys.sty
 Package: l3keys 2013/12/08 v4614 L3 Experimental key-value interfaces
-\g__keyval_level_int=\count178
-\l_keys_choice_int=\count179
+\g__keyval_level_int=\count180
+\l_keys_choice_int=\count181
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3fp.sty
 Package: l3fp 2014/01/04 v4642 L3 Floating points
-\c__fp_leading_shift_int=\count180
-\c__fp_middle_shift_int=\count181
-\c__fp_trailing_shift_int=\count182
-\c__fp_big_leading_shift_int=\count183
-\c__fp_big_middle_shift_int=\count184
-\c__fp_big_trailing_shift_int=\count185
-\c__fp_Bigg_leading_shift_int=\count186
-\c__fp_Bigg_middle_shift_int=\count187
-\c__fp_Bigg_trailing_shift_int=\count188
+\c__fp_leading_shift_int=\count182
+\c__fp_middle_shift_int=\count183
+\c__fp_trailing_shift_int=\count184
+\c__fp_big_leading_shift_int=\count185
+\c__fp_big_middle_shift_int=\count186
+\c__fp_big_trailing_shift_int=\count187
+\c__fp_Bigg_leading_shift_int=\count188
+\c__fp_Bigg_middle_shift_int=\count189
+\c__fp_Bigg_trailing_shift_int=\count190
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3box.sty
 Package: l3box 2013/07/28 v4581 L3 Experimental boxes
@@ -722,8 +724,8 @@ Package: l3color 2012/08/29 v4156 L3 Experimental color support
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3luatex.sty
 Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
-\g__cctab_allocate_int=\count189
-\g__cctab_stack_int=\count190
+\g__cctab_allocate_int=\count191
+\g__cctab_stack_int=\count192
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3candidates.sty
 Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
@@ -746,16 +748,16 @@ Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2013/12/31 v4634 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count191
-\l__xparse_m_args_int=\count192
-\l__xparse_mandatory_args_int=\count193
-\l__xparse_processor_int=\count194
-\l__xparse_v_nesting_int=\count195
-)
-\l_fontspec_script_int=\count196
+\l__xparse_current_arg_int=\count193
+\l__xparse_m_args_int=\count194
+\l__xparse_mandatory_args_int=\count195
+\l__xparse_processor_int=\count196
 Normal \count register pool exhausted, switching to extended pool.
-\l_fontspec_language_int=\count277
-\l_fontspec_strnum_int=\count278
+\l__xparse_v_nesting_int=\count277
+)
+\l_fontspec_script_int=\count278
+\l_fontspec_language_int=\count279
+\l_fontspec_strnum_int=\count280
 \l_fontspec_tmpa_dim=\dimen188
 \l_fontspec_tmpb_dim=\dimen189
 \l_fontspec_tmpc_dim=\dimen190
@@ -812,7 +814,7 @@ LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd
 File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-\tipaTiiicode=\count279
+\tipaTiiicode=\count281
 \tipasavetokens=\toks24
 \tipachecktokens=\toks25
 )
@@ -922,7 +924,7 @@ File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 .................................................
 Variant \prop_gput:cnV already defined; not changing it on line 582
 Variant \prop_gput:cnx already defined; not changing it on line 583
-\l_fontspec_tmp_int=\count280
+\l_fontspec_tmp_int=\count282
 LaTeX Info: Redefining \itshape on input line 2087.
 LaTeX Info: Redefining \slshape on input line 2092.
 LaTeX Info: Redefining \scshape on input line 2097.
@@ -933,15 +935,15 @@ LaTeX Info: Redefining \upshape on input line 2102.
 Package: abntex2cite 2014/01/26 v1.9.2 abnTeX2
 
 (/usr/local/share/texmf/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip261
-\ABCIauxlen=\skip262
-\c@ABCIaux=\count281
-\c@ABCImax=\count282
+\minimumbiblabelwidth=\skip262
+\ABCIauxlen=\skip263
+\c@ABCIaux=\count283
+\c@ABCImax=\count284
 
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip263
+\biblabelsep=\skip264
 LaTeX Info: Redefining \newblock on input line 675.
 LaTeX Info: Redefining \cite on input line 702.
 \ABCItoken=\toks26
@@ -951,7 +953,7 @@ Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count283
+\c@float@type=\count285
 \float@exts=\toks27
 \float@box=\box46
 \@float@everytoks=\toks28
@@ -962,7 +964,7 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
 Package: tabulary 2008/12/01 v0.9 tabulary package (DPC)
-\TY@count=\count284
+\TY@count=\count286
 \TY@linewidth=\dimen191
 \tymin=\dimen192
 \tymax=\dimen193
@@ -979,9 +981,9 @@ Package xcolor Info: Driver file: xetex.def on input line 225.
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks29
-\minrowclearance=\skip264
+\minrowclearance=\skip265
 )
-\rownum=\count285
+\rownum=\count287
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
@@ -1012,28 +1014,28 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \caption@parindent=\dimen259
 \caption@hangindent=\dimen260
 )
-\c@ContinuedFloat=\count286
+\c@ContinuedFloat=\count288
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count287
+\lst@mode=\count289
 \lst@gtempboxa=\box48
 \lst@token=\toks30
-\lst@length=\count288
+\lst@length=\count290
 \lst@currlwidth=\dimen261
-\lst@column=\count289
-\lst@pos=\count290
+\lst@column=\count291
+\lst@pos=\count292
 \lst@lostspace=\dimen262
 \lst@width=\dimen263
-\lst@newlines=\count291
-\lst@lineno=\count292
+\lst@newlines=\count293
+\lst@lineno=\count294
 \lst@maxwidth=\dimen264
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
-\c@lstnumber=\count293
-\lst@skipnumbers=\count294
+\c@lstnumber=\count295
+\lst@skipnumbers=\count296
 \lst@framebox=\box49
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -1043,7 +1045,7 @@ Package: listings 2013/08/26 1.5b (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip265
+\@mathmargin=\skip266
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -1061,13 +1063,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count295
+\inf@bad=\count297
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count296
-\leftroot@=\count297
+\uproot@=\count298
+\leftroot@=\count299
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count298
-\DOTSCASE@=\count299
+\classnum@=\count300
+\DOTSCASE@=\count301
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -1076,15 +1078,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen267
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count300
-\c@MaxMatrixCols=\count301
+\macc@depth=\count302
+\c@MaxMatrixCols=\count303
 \dotsspace@=\muskip17
-\c@parentequation=\count302
-\dspbrk@lvl=\count303
+\c@parentequation=\count304
+\dspbrk@lvl=\count305
 \tag@help=\toks32
-\row@=\count304
-\column@=\count305
-\maxfields@=\count306
+\row@=\count306
+\column@=\count307
+\maxfields@=\count308
 \andhelp@=\toks33
 \eqnshift@=\dimen268
 \alignsep@=\dimen269
@@ -1093,8 +1095,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen272
 \lineht@=\dimen273
 \@envbody=\toks34
-\multlinegap=\skip266
-\multlinetaggap=\skip267
+\multlinegap=\skip267
+\multlinetaggap=\skip268
 \mathdisplay@stack=\toks35
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -1148,10 +1150,10 @@ Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 \pgf@yc=\dimen281
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count307
-\c@pgf@countb=\count308
-\c@pgf@countc=\count309
-\c@pgf@countd=\count310
+\c@pgf@counta=\count309
+\c@pgf@countb=\count310
+\c@pgf@countc=\count311
+\c@pgf@countd=\count312
 
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -1169,8 +1171,8 @@ File: pgfsys-common-pdf-via-dvi.def 2008/05/19  (rcs-revision 1.7)
 )))
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
-\pgfsyssoftpath@smallbuffer@items=\count311
-\pgfsyssoftpath@bigbuffer@items=\count312
+\pgfsyssoftpath@smallbuffer@items=\count313
+\pgfsyssoftpath@bigbuffer@items=\count314
 )
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -1183,7 +1185,7 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen282
-\pgfmath@count=\count313
+\pgfmath@count=\count315
 \pgfmath@box=\box53
 \pgfmath@toks=\toks40
 \pgfmath@stack@operand=\toks41
@@ -1198,7 +1200,7 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count314
+\c@pgfmathroundto@lastzeros=\count316
 ))
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
@@ -1232,7 +1234,7 @@ File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 \pgfpic=\box54
 \pgf@hbox=\box55
 \pgf@layerbox@main=\box56
-\pgf@picture@serial@count=\count315
+\pgf@picture@serial@count=\count317
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
@@ -1259,7 +1261,7 @@ File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
 \pgf@max=\dimen305
-\pgf@sys@shading@range@num=\count316
+\pgf@sys@shading@range@num=\count318
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
@@ -1307,7 +1309,7 @@ Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count317
+\pgf@plot@mark@count=\count319
 \pgfplotmarksize=\dimen310
 )
 \tikz@lastx=\dimen311
@@ -1318,18 +1320,18 @@ File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \tikzsiblingdistance=\dimen316
 \tikz@figbox=\box59
 \tikz@tempbox=\box60
-\tikztreelevel=\count318
-\tikznumberofchildren=\count319
-\tikznumberofcurrentchild=\count320
-\tikz@fig@count=\count321
+\tikztreelevel=\count320
+\tikznumberofchildren=\count321
+\tikznumberofcurrentchild=\count322
+\tikz@fig@count=\count323
 
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count322
-\pgfmatrixcurrentcolumn=\count323
-\pgf@matrix@numberofcolumns=\count324
+\pgfmatrixcurrentrow=\count324
+\pgfmatrixcurrentcolumn=\count325
+\pgf@matrix@numberofcolumns=\count326
 )
-\tikz@expandcount=\count325
+\tikz@expandcount=\count327
 
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
 hs.code.tex
@@ -1338,7 +1340,7 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
 \footnotemargin=\dimen317
-\c@pp@next@reset=\count326
+\c@pp@next@reset=\count328
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -1362,8 +1364,8 @@ Package: pgfplots 2013/10/03 v1.9 Data Visualization (1.9)
 \t@pgfplots@tokb=\toks47
 \t@pgfplots@tokc=\toks48
 \pgfplots@tmpa=\dimen318
-\c@pgfplots@coordindex=\count327
-\c@pgfplots@scanlineindex=\count328
+\c@pgfplots@coordindex=\count329
+\c@pgfplots@scanlineindex=\count330
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -1386,12 +1388,12 @@ gfsupp_pgfkeysfiltered.code.tex
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count329
+\c@pgfmathroundto@lastzeros=\count331
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2012/09/11 v2.10 (rcs-revision 1.17)
-\pgf@plot@mark@count=\count330
+\pgf@plot@mark@count=\count332
 \pgfplotmarksize=\dimen319
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
@@ -1402,7 +1404,7 @@ File: pgfcorescopes.code.tex 2012/11/30  (rcs-revision 1.38)
 \pgfpic=\box61
 \pgf@hbox=\box62
 \pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count331
+\pgf@picture@serial@count=\count333
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_pgfcorelayers.code.tex
@@ -1415,13 +1417,13 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count332
+\c@pgfplotsarray@tmp=\count334
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count333
+\c@pgfplotstable@counta=\count335
 \t@pgfplotstable@a=\toks52
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
@@ -1434,13 +1436,13 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count334
+\c@pgfplotslibrarysurf@no=\count336
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-xetex.def
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-dvipdfmx.def
-\c@pgfplotslibrarysurf@streamlen=\count335
+\c@pgfplotslibrarysurf@streamlen=\count337
 ))))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
 tex
@@ -1467,7 +1469,7 @@ ations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen322
 \pgfdecoratedinputsegmentremainingdistance=\dimen323
 \pgf@decorate@distancetomove=\dimen324
-\pgf@decorate@repeatstate=\count336
+\pgf@decorate@repeatstate=\count338
 \pgfdecorationsegmentamplitude=\dimen325
 \pgfdecorationsegmentlength=\dimen326
 )
@@ -1481,7 +1483,7 @@ athmorphing.code.tex))
 ations.pathreplacing.code.tex
 (/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
 athreplacing.code.tex))
-\pgfplots@numplots=\count337
+\pgfplots@numplots=\count339
 \pgfplots@xmin@reg=\dimen327
 \pgfplots@xmax@reg=\dimen328
 \pgfplots@ymin@reg=\dimen329
@@ -1714,7 +1716,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count338
+\c@section@level=\count340
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1723,7 +1725,7 @@ LaTeX Info: Redefining \ref on input line 1841.
 LaTeX Info: Redefining \pageref on input line 1841.
 LaTeX Info: Redefining \nameref on input line 1841.
 \myptabbox=\box87
-\myptabboxwidth=\skip268
+\myptabboxwidth=\skip269
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -1796,7 +1798,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count339
+\c@lstlisting=\count341
 ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.9} (current compat level: 1.8).
@@ -1808,10 +1810,13 @@ LaTeX Font Info:    Font shape `EU1/lmss/bx/it' in size <14.4> not available
 5.
  [1
 
+] [2
+
 ] [1
 
 
 
+] [2
 
 ]
 LaTeX Font Info:    Try loading font information for U+msa on input line 1847.
@@ -1823,46 +1828,56 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1847.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2
+) [3] [4
 
-] (./mtsp.lof)
-[3
+] [5
+
+] [6
+
+]
+(./mtsp.lof) [7] [8
 
 ] (./mtsp.toc
 LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <12> not available
-(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 20.
- [4
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 21.
+ [9]) [10] [11] [12
 
-]) [5] [6]
+]
 
 Package babel Warning: You haven't loaded the language english yet
 (babel)                I'll proceed, but expect unexpected results.
-(babel)                Reported on input line 1865.
+(babel)                Reported on input line 1881.
 
-[7
+[13] [14
 
-] [8
+] [15
 
+] [16
 
-] [9
+] [17] [18
 
-] [10
-
-] [11] [12
+] [19] [20] [21
 
 ]
 File: img/pmx.png Graphic file (type QTm)
  <use  "img/pmx.png" >
 File: img/pmx2.png Graphic file (type QTm)
- <use  "img/pmx2.png" >
+
+<use  "img/pmx2.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13]
+[22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
 LaTeX Font Info:    Font shape `EU1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `EU1/lmss/bx/sl' tried instead on input line 200
-0.
- [14] [15] [16
+(Font)              Font shape `EU1/lmss/bx/sl' tried instead on input line 201
+6.
+
+[24] [25
+
+] [26
 
 ]
 PGFPlots: reading {AG.csv}
@@ -1870,56 +1885,53 @@ PGFPlots: reading {t5.csv}
 
 
 Package pgfplots Warning: Axis range for axis y is approximately empty; enlargi
-ng it (it is [5877651.000000000:5877651.000000000]) on input line 2085.
+ng it (it is [5877651.000000000:5877651.000000000]) on input line 2101.
 
  [warning /pgfplots/warning/approx empty range enlarged]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17
+[27] [28] [29]
 
-] [18] [19]
-
-Package caption Warning: \label without proper \caption on input line 2171.
+Package caption Warning: \label without proper \caption on input line 2187.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `img-two-part' on page 20 undefined on input line 2138
+LaTeX Warning: Reference `img-two-part' on page 30 undefined on input line 2154
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2174--2176
+Underfull \hbox (badness 10000) in paragraph at lines 2190--2192
 
  []
 
-[20] [21]
+[30] [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
 File: /home/victor/Dropbox/tcc/code/algo_genetico_comum/agc/build-agc-Desktop-D
 ebug/a1.jpg Graphic file (type QTm)
 
 <use  "/home/victor/Dropbox/tcc/code/algo_genetico_comum/agc/build-agc-Desktop-
-Debug/a1.jpg" > [22]
+Debug/a1.jpg" >
 File: /home/victor/Dropbox/tcc/code/algo_genetico_comum/agc/build-agc-Desktop-D
 ebug/ANN0.jpg Graphic file (type QTm)
 
 <use  "/home/victor/Dropbox/tcc/code/algo_genetico_comum/agc/build-agc-Desktop-
 Debug/ANN0.jpg" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: /home/victor/Dropbox/tcc/code/algo_genetico_comum/agc/build-agc-Desktop-D
 ebug/t1.jpg Graphic file (type QTm)
 
 <use  "/home/victor/Dropbox/tcc/code/algo_genetico_comum/agc/build-agc-Desktop-
-Debug/t1.jpg" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+Debug/t1.jpg" > [33]
 File: /home/victor/Dropbox/tcc/code/algo_genetico_comum/agc/build-agc-Desktop-D
 ebug/tNN0.jpg Graphic file (type QTm)
 
 <use  "/home/victor/Dropbox/tcc/code/algo_genetico_comum/agc/build-agc-Desktop-
-Debug/tNN0.jpg" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[23]
+Debug/tNN0.jpg" > [34]
 File: /home/victor/Dropbox/tcc/code/algo_genetico_comum/agc/build-agc-Desktop-D
 ebug/pr.jpg Graphic file (type QTm)
 
@@ -1928,55 +1940,98 @@ Debug/pr.jpg" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24] [25]
+[35]
 PGFPlots: reading {via1.csv}
 PGFPlots: reading {via2.csv}
 PGFPlots: reading {via3.csv}
- [26]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36]
 PGFPlots: reading {t2.csv}
 PGFPlots: reading {t3.csv}
 PGFPlots: reading {t4.csv}
- [27]
+ [37] [38]
 PGFPlots: reading {a9.csv}
- [28] [29
+ [39] [40
 
-] (./mtsp.bbl [30
+] [41] [42
+
+] (./mtsp.bbl [43] [44
 
 ]
 bibitemlist
-[31
-
-]) [32]
+[45]) [46]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 2497.
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 249
-7.
+nput line 2513.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 251
+3.
  (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-(../code/algo_genetico_comum/agc/agc/main.cpp [33
+(../code/algo_genetico_comum/agc/agc/main.cpp [47
 
-] [34] [35] [36] [37])
-[38] (../code/algo_genetico_comum/agc/agc/ga.h [39
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [40]) [41]
-(../code/algo_genetico_comum/agc/agc/ga.cpp [42
+ [48]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [43] [44] [45] [46] [47]
-[48] [49] [50]) 
+ [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51])
+[52] (../code/algo_genetico_comum/agc/agc/ga.h [53
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54])
+[55] [56
+
+] (../code/algo_genetico_comum/agc/agc/ga.cpp [57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65])
+
 AED: lastpage setting LastPage
-[51]
+[66]
 \tf@lof=\write5
 \openout5 = `mtsp.lof'.
 
 \tf@toc=\write6
 \openout6 = `mtsp.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2503.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2503.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2519.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2519.
  (./mtsp.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2503.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2503.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2519.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2519.
 
 
 LaTeX Warning: There were undefined references.
@@ -1984,15 +2039,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2503.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2519.
  ) 
 Here is how much of TeX's memory you used:
- 47558 strings out of 495627
- 983824 string characters out of 6186773
- 2369938 words of memory out of 5000000
- 49994 multiletter control sequences out of 15000+600000
+ 47610 strings out of 495627
+ 984491 string characters out of 6186773
+ 2370885 words of memory out of 5000000
+ 50046 multiletter control sequences out of 15000+600000
  10812 words of font info for 63 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  61i,18n,94p,10409b,2091s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mtsp.pdf (52 pages).
+Output written on mtsp.pdf (68 pages).
