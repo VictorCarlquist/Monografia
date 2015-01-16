@@ -274,7 +274,7 @@ brazil % o último idioma é o principal do documento
    %\assinatura{\bfseries\imprimirorientadorRotulo~\imprimirorientador} 
    \assinatura{\bfseries\imprimirorientadorRotulo~\imprimirorientador} 
    \assinatura{\bfseries Co-orientador: Prof. Me. André Malvezzi Lopes}
-   \assinatura{\bfseries Paulo Giovani de Faria Zeferino}
+   \assinatura{\bfseries Prof. Esp. Paulo Giovani de Faria Zeferino}
    
    \vspace*{\fill}
    %\assinatura{\textbf{Professor} \\ Convidado 3}
@@ -283,7 +283,8 @@ brazil % o último idioma é o principal do documento
    \begin{center}
     {\normalsize\bfseries\MakeTextUppercase{Local} \par}
     \vspace*{0.3cm}
-    {\normalsize\imprimirinstituicao~-~{\itshape campus}~\imprimirlocal}
+    %{\normalsize\imprimirinstituicao~-~{\itshape campus}~\imprimirlocal}
+    {\normalsize\imprimirinstituicao}
     \par
     {\normalsize\imprimirlocal, SP}
     \par

@@ -1,4 +1,4 @@
-\documentclass[12pt,openright,a4paper,twoside]{tcc}
+\documentclass[12pt,openright,a4paper,oneside]{tcc}
 \usepackage{fontspec}
 \usepackage[alf]{abntex2cite}
 \usepackage{lastpage}
@@ -50,10 +50,10 @@
 \titulo{Desenvolvimento de um Algoritmo Genético Híbrido para a solução do problema dos Múltiplos Caixeiros Viajantes (\textit{mTSP})}
 \orientador{Prof. Dr. Helton Hugo de Carvalho Júnior}
 \coorientador{Prof. Me. André Malvezzi Lopes}
-\preambulo{Trabalho de Conclusão de Curso em Tecnologia em Análise e Desenvolvimento de Sistemas.}
+\preambulo{Trabalho de Conclusão de Curso apresentado ao Instituto Federal de Educação, Ciência e Tecnologia - IFSP - \textit{Campus} Campos do Jordão, como parte das exigências para obtenção do título de Tecnólogo em Análise e Desenvolvimento de Sistemas.}
 \instituicao{Instituto Federal de Educação, Ciência e Tecnologia de São Paulo -- \textit{campus} Campos do Jordão}
 \local{Campos do Jordão}
-\data{\today}
+\data{7 de janeiro de 2015}
 
 \makeatletter
 \hypersetup{
@@ -1853,9 +1853,9 @@ Geração Tamanho
 
         Agradeço ao meu orientador \imprimirorientador~e aos meus co-orientadores Prof. Dr. Silvio Alexandre de Araujo e, em especial, o co-orientador \imprimircoorientador, por ter compartilhado  e dedicado seus conhecimentos, paciência e tempo a mim.
 
-        Agradeço a todos os meus amigos, ao qual sempre estiveram dispostos a ajudar.
+        Agradeço a todos os meus amigos que sempre estiveram dispostos a ajudar.
 
-        Também agradeço aos professores desta instituição, que, sem dúvida, proveram uma base sólida de conhecimento, ao qual levarei por toda a minha vida.
+        Também agradeço aos professores desta instituição, que, sem dúvida, proveram uma base sólida de conhecimento, no qual levarei por toda a minha vida.
 
         Também agradeço a todos os funcionários, que contribuíram, de forma direta ou indireta, para a minha formação.
 
@@ -1879,7 +1879,7 @@ Geração Tamanho
 
 	\begin{resumo}[Abstract]
     	\begin{otherlanguage*}{english}
-		This paper shows the development of the algorithm that be able to generate a efficient solution to \textit{Multiple Traveling Salesman Problem} (mTSP). Was developed a hybrid algorithm that use the Genetic Algorithm with \textit{Nearest Neighbor} algorithm, this last algorithm cited, generate the initial population for Genetic Algorithm. This hybrid algorithm get a great performance at execution time and it can generate a good solution to solve \textit{Multiple Traveling Salesman Problem}. To valid the algorithm, the tests was compared against TSPLIB's results.
+		This paper shows the development of the algorithm that is able to generate a efficient solution for \textit{Multiple Traveling Salesman Problem} (mTSP). An algorithm was developed a hybrid algorithm that use the Genetic Algorithm with \textit{Nearest Neighbor} algorithm, this last algorithm cited, generates the initial population for Genetic Algorithm. This hybrid algorithm gets a great performance at execution time and it can generate a good solution to solve \textit{Multiple Traveling Salesman Problem}. To valid the algorithm, the tests were compared against TSPLIB's results.
 
         \vspace{\onelineskip}
         \noindent
@@ -1887,7 +1887,7 @@ Geração Tamanho
 		\end{otherlanguage*}
 	\end{resumo}
 	
-
+    \textual
 	\chapter{Introdução}
 		
 		A importância do transporte veicular nos dias de hoje causa impactos positivos e negativos 
@@ -1898,7 +1898,7 @@ Geração Tamanho
 		Se um veículo percorrer uma menor rota, a empresa diminui custos, como, por exemplo, 
 		combustível, manutenção e tempo de entrega.
 
-		O crescimento das cidades e da complexidade rodoviária dificulta a análise da melhor rota a se percorrer. Esse problema tende a ficar mais complexo conforme aumenta a quantidade de veículos que a empresa possui. Com isso, surge a necessidade de criar 
+		O crescimento das cidades e da complexidade rodoviária dificulta a análise da melhor rota a se percorrerem. Esse problema tende a ficar mais complexo conforme aumenta a quantidade de veículos que a empresa possui. Com isso, surge a necessidade de criar 
 		\textit{softwares} cada vez mais robustos que resolvam o problema de roteirização de veículos, encontrando o melhor caminho para os veículos percorrer, realizando suas entregas nestes pontos já pré-estabelecidos.
 
 
@@ -1908,7 +1908,7 @@ Geração Tamanho
 
 		Antes de se iniciar o desenvolvimento do algoritmo híbrido, foi realizado o levantamento bibliográfico sobre o assunto e debatido como otimiza-lo com o orientador do projeto.
 
-		Foi utilizado a base de testes TSPLIB desenvolvida para o Problema do Caixeiro Viajante (TSP) \footnote{Disponível em \url{http://www.math.uwaterloo.ca/tsp/world/countries.html}}, já que não foi possível encontrar uma base de testes específica para o Problema dos Múltiplos Caixeiros Viajantes (mTSP). Esta base de testes foi utilizada como referência para medir o desempenho das rotas e o tempo de execução do algoritmo híbrido desenvolvido\footnote{O TSPLIB se baseia em informações geográficas do \textit{National Imagery and Mapping Agency}} \cite{tsplib}.
+		Foi utilizado a base de testes TSPLIB\footnote{Disponível em \url{http://www.math.uwaterloo.ca/tsp/world/countries.html}.} desenvolvida para o Problema do Caixeiro Viajante (TSP), já que não foi possível encontrar uma base de testes específica para o Problema dos Múltiplos Caixeiros Viajantes (mTSP). Esta base de testes foi utilizada como referência para medir o desempenho das rotas e o tempo de execução do algoritmo híbrido desenvolvido\footnote{O TSPLIB se baseia em informações geográficas do \textit{National Imagery and Mapping Agency}.} \cite{tsplib}.
 
 		Para exemplificar, foi escolhido um teste da base TSPLIB que já possuí resultados de outros algoritmos, como a distância encontrada e o tempo que o algoritmo levou para calcular a rota. O teste foi submetido ao algoritmo híbrido e os resultados que ele gerou foram comparados com os resultados da base TSPLIB.
 
@@ -1999,7 +1999,7 @@ Geração Tamanho
 	   		\end{figure}
 
 	   		Por exemplo, como o ``filho 1'' já possui o valor 1, então é pesquisado qual a posição que o valor 1 está neste vetor, no caso da \textbf{figura~\ref{pmx2}} o valor 1 está na posição 4, então o valor na posição 4 do vetor do ``pai 1'' é copiado para a posição 1 do vetor ``filho 1''. No outro exemplo na mesma figura, na terceira posição do vetor do ``filho 2'',  o número 5 já existe na posição 5, sendo assim, o valor que está na posição 5 no vetor ``pai 2'' é o valor 6, mas este valor também existe do vetor ``filho 2'', portanto é pesquisado a posição do valor 6 no vetor ``filho 2'', que neste caso é a posição 6, então copia-se o valor 8 que está na posição 6 do vetor ``pai 2'' para a terceira posição do vetor ``filho 2''. 
-	   		Este processo descrito acima é repetido para todos os outros elementos vazios\footnote{Os valores vazios são representados pelos caracteres ``x'' na \textbf{figura~\ref{pmx}}} dos filhos.
+	   		Este processo descrito acima é repetido para todos os outros elementos vazios\footnote{Os valores vazios são representados pelos caracteres ``x'' na \textbf{figura~\ref{pmx}}.} dos filhos.
 	   		  
 		\subsection{Operador de mutação}
 			\label{Sem}
@@ -2015,9 +2015,9 @@ Geração Tamanho
 
         \subsection{Algoritmo \textit{Nearest-Neighbor} (NN)}
 
-            O Algoritmo \textit{Nearest-Neighbor} (NN) é classificado como um algoritmo guloso\footnote{Um algoritmo guloso preza pela menor rota localmente, sem se preocupar com o desempenho da rota globalmente}.
+            O Algoritmo \textit{Nearest-Neighbor} (NN) é classificado como um algoritmo guloso\footnote{Um algoritmo guloso preza pela menor rota localmente, sem se preocupar com o desempenho da rota globalmente.}.
 
-            O NN é um algoritmo simples de implementação, sua única tarefa é selecionar um vértice e verificar qual vértice ao seu redor esta mais próximo, e colocá-lo como próxima vértice á ser visitado. Após isso, esse passo é repetido para o vértice escolhido. 
+            O NN é um algoritmo simples de implementação, sua única tarefa é selecionar um vértice e verificar qual vértice ao seu redor esta mais próximo, e colocá-lo como próximo vértice á ser visitado. Após isso, esse passo é repetido para o vértice escolhido. 
 
             O Algoritmo NN possui uma complexidade $O(\frac{n^2-n}{2})$, pois faz a comparação com todos os vértices ainda não visitados \cite{NN}.
 			
@@ -2151,15 +2151,17 @@ Geração Tamanho
 
 			Cada cromossomo representa uma possível solução para o problema, então, para definir a estrutura do cromossomo do algoritmo foi utilizado o método \textit{two-part}.
 
-			O \textit{two-part} consiste em dividir o cromossomo em duas partes, uma parte armazena as informações da rota e a outra a informação dos caixeiros. Considere o cromossomo da \textbf{figura~\ref{img-two-part}}.
+			O \textit{two-part} consiste em dividir o cromossomo em duas partes, uma parte armazena as informações da rota e a outra a informação dos caixeiros. Considere o cromossomo da \textbf{figura~\ref{imgtwopart}}.
 			
-			\begin{figure}[h]
-				\begin{center}
+            \begin{center}
+                \begin{figure}[h]
+
                 \caption{Cromossomo representado pelo método \textit{two-part}.}
-				\begin{tikzpicture}
+				\centering
+                \begin{tikzpicture}
 					\tikzstyle{every path}=[very thick]
 
-					\edef\sizetape{0.7cm}
+					\edef\sizetape{0.65cm}
 					\tikzstyle{tmtape}=[draw,minimum size=\sizetape]
 					\tikzstyle{tmhead}=[blue,draw,minimum size=\sizetape]
 					\tikzstyle{l} = [draw, -latex',thick]
@@ -2182,10 +2184,10 @@ Geração Tamanho
 					\end{scope}
 
 				\end{tikzpicture}
-				\end{center}
 				\caption*{\textbf{Fonte:} Do autor.}
-				\label{img-two-part}
+                \label{imgtwopart}
 			\end{figure}
+            \end{center}
 
 			Os três últimos genes representam os caixeiros. Neste exemplo foi definido o ponto de partida como sendo o 0. Seguindo este raciocínio, o primeiro caixeiro terá que sair do ponto 0 e visitar dois pontos, ou seja, os pontos 1 e 9 e retornar ao ponto 0, já o segundo caixeiro terá que sair do ponto 0 e visitar seis pontos, os pontos 10, 3, 11, 5, 4 e 2 e retornar ao ponto 0 e o último caixeiro terá que sair do ponto 0 e visitar três pontos, os pontos 6,7 e 8 e retornar ao ponto 0 (\textbf{figura~\ref{two-part}}).
 			\\
@@ -2196,7 +2198,7 @@ Geração Tamanho
 			\begin{tikzpicture}
 				\tikzstyle{every path}=[very thick]
 
-				\edef\sizetape{0.7cm}
+				\edef\sizetape{0.65cm}
 				\tikzstyle{tmtape}=[draw,minimum size=\sizetape]
 				\tikzstyle{tmheadgreen}=[green,draw,minimum size=\sizetape]
 				\tikzstyle{tmheadblue}=[blue,draw,minimum size=\sizetape]
@@ -2257,7 +2259,7 @@ Geração Tamanho
 		O calculo da distância total ($dt$) é dado por:
 
 		\begin{equation}
-			d = \sum_{i=1}^{c} \sum_{j=1}^{a_i-1} \sqrt{(vcx_{ji}-vcx_{ji+1})^2 + (vcy_{ji}-vcy_{ji+1})^2}
+			d = \sum_{j=1}^{c} \sum_{i=1}^{a_j-1} \sqrt{(vcx_{ji}-vcx_{ji+1})^2 + (vcy_{ji}-vcy_{ji+1})^2}
 			\label{eq-ecli1}
 		\end{equation}
 		\begin{equation}
@@ -2273,7 +2275,7 @@ Geração Tamanho
 
 		A variável $c$ representa o número de caixeiros viajantes, e a variável $q$ representa o valor do último vértice do caixeiro.
 
-		Na \textbf{equação ~\ref{eq-ecli1}} é calculado a distância das conexões entre os vértices, não considerando o depósito. Já na \textbf{equação ~\ref{eq-ecli2}} é adicionado a distância do depósito para o primeiro e o último vértice da rota de cada caixeiro, finalizando o calculo da distância total.
+		Na \textbf{equação~\ref{eq-ecli1}} é calculado a distância das conexões entre os vértices, não considerando o depósito. Já na \textbf{equação~\ref{eq-ecli2}} é adicionado a distância do depósito para o primeiro e o último vértice da rota de cada caixeiro, finalizando o calculo da distância total.
 
 		O algoritmo considera o melhor indivíduo, aquele que tiver a menor distância total. 
 
@@ -2291,9 +2293,9 @@ Geração Tamanho
 			
 		\section{Desempenho}
 		
-		Para mensurar o desempenho do algoritmo foram realizados diversos teste com parâmetros diferentes, levando em consideração o tamanho da rota e o tempo de execução. A base de testes TSPLIB foi utilizada apenas para validar o algoritmo, pois esta base apenas contem testes para o problema do caixeiro viajante, sendo que o algoritmo proposto tentar solucionar o problema dos múltiplos caixeiros viajantes. 
+		Para mensurar o desempenho do algoritmo foram realizados diversos teste com parâmetros diferentes, levando em consideração o tamanho da rota e o tempo de execução. A base de testes TSPLIB foi utilizada apenas para validar o algoritmo, pois esta base apenas contém testes para o problema do caixeiro viajante, sendo que o algoritmo proposto tenta solucionar o problema dos múltiplos caixeiros viajantes. 
 		
-		O algoritmo foi implementado utilizando a linguagem C++ e os resultado gráficos das rotas foram gerados pela biblioteca BITMAPIMG\footnote{A biblioteca BITMAPIMG foi desenvolvida pelo autor e está disponível em \url{https://github.com/VictorCarlquist/BITMAPIMG}}.
+		O algoritmo foi implementado utilizando a linguagem C++ e os resultado gráficos das rotas foram gerados pela biblioteca BITMAPIMG\footnote{A biblioteca BITMAPIMG foi desenvolvida pelo autor e está disponível em \url{https://github.com/VictorCarlquist/BITMAPIMG}.}.
 		O computador que executou os testes possui processador Intel\textregistered Core\texttrademark ~i5 2,4Hz, 4GB de memória RAM. É necessário ressaltar que os tempos de execuções entre os resultados da base de testes TSPLIB e o algoritmo desenvolvido pelo autor possuem discrepâncias, pois as arquiteturas dos processadores são diferentes, exceto o teste PR2392, portanto, os testes entre esses resultados são utilizados para, apenas, validar o algoritmo.
 
 		\subsection{Resultados do Problema do Caixeiro Viajante (TSP)}
@@ -2302,15 +2304,23 @@ Geração Tamanho
 
         \begin{figure}[h]
             \centering
+            \caption{TSPLIB - Imagem gerada pelo algoritmo LKH, Argentina.}
+            \includegraphics[width = 8cm,keepaspectratio]{img/artour.jpg}
+            \caption*{\textbf{Fonte:} TSPLIB.}
+            \label{figargentina}
+        \end{figure}
+
+		Foram utilizados três testes da base de dados do \textit{TSPLIB}. Os testes escolhidos contém todas as cidades da Argentina (9152 cidades), China (71.009 cidades) e um teste denominado PR2392 (2392 pontos) fornecido pela \textit{Tektronics Incorporated} e armazenado no \textit{TSPLIB}. 
+        
+        A rota ótima para o Problema do Caixeiro Viajante (TSP) utilizando a Argentina é de 837.479km (\textbf{figura~\ref{figargentina}}). O melhor algoritmo para este problema, encontrou a rota ótima em 24.301 segundos (aproximadamente 6 horas e 45 minutos) sendo executado em uma arquitetura Sun Ultra 80 450 MHz.
+        \newpage
+        \begin{figure}[h]
+            \centering
             \caption{Teste utilizando o Algoritmo Genético - Argentina.}
             \includegraphics[width = 8cm,keepaspectratio]{a1.jpg}
             \caption*{\textbf{Fonte:} Do autor.}
             \label{figa1}
         \end{figure}
-
-		Foram utilizados três testes da base de dados do \textit{TSPLIB}. Os testes escolhidos contém todas as cidades da Argentina (9152 cidades), China (71.009 cidades) e um teste denominado PR2392 (2392 pontos) fornecido pela \textit{Tektronics Incorporated} e armazenado no \textit{TSPLIB}. 
-
-        A rota ótima para o Problema do Caixeiro Viajante (TSP) utilizando a Argentina é de 837.479km. O melhor algoritmo para este problema, encontrou a rota ótima em 24.301 segundos (aproximadamente 6 horas e 45 minutos) sendo executado em uma arquitetura Sun Ultra 80 450 MHz.
 
         \begin{figure}[h]
             \centering
@@ -2440,7 +2450,6 @@ Geração Tamanho
 
 		Uma \textit{thread} possui um ID, um contador de programa, um conjunto de registradores e uma pilha. Também compartilha com outras \textit{threads} em um mesmo processo a seção de código, seção de dados e outros recursos do sistema operacional (SO), como arquivos abertos e sinais. 
 		O processo tendo mais de uma \textit{thread}, significa que é possível realizar mais de uma tarefa ao mesmo tempo \cite{THREAD}.		
-		\newpage
 			\subsubsection{\textit{Threads} (GANN)}
 
 			Foram implementados \textit{threads} para otimizar o tempo de execução do \textit{Nearest-Neighbor}. 
