@@ -1,0 +1,227 @@
+commit 7728183fbcc160494877291362d941f5a18a7270
+Author: Victor Carlquist <victorcarlquist@gmail.com>
+Date:   Mon Jan 19 20:13:49 2015 -0200
+
+    modificações
+
+diff --git a/mtsp.tex b/mtsp.tex
+index 8cf7cd4..e2c73be 100644
+--- a/mtsp.tex
++++ b/mtsp.tex
+@@ -1868,7 +1868,7 @@ Geração Tamanho
+ 	\newpage
+ 
+ 	\begin{resumo}
+-        Neste trabalho é abordado o desenvolvimento de um algoritmo que consiga gerar uma solução eficiente para o Problema dos Múltiplos Caixeiros Viajantes.
++        Neste trabalho é abordado o desenvolvimento de um algoritmo que consiga gerar uma solução para o Problema dos Múltiplos Caixeiros Viajantes.
+         Foi desenvolvido um algoritmo híbrido, utilizando o Algoritmo Genético com o algoritmo \textit{Nearest Neighbor}, que foi utilizado para gerar a população inicial, obtendo um bom desempenho no tempo de execução e gerando uma solução eficiente para o Problema dos Múltiplos Caixeiros Viajantes. Todos os testes para validar o algoritmo foram comparados com os resultados da base de testes TSPLIB. 
+         
+         \vspace{\onelineskip}
+@@ -1879,7 +1879,7 @@ Geração Tamanho
+ 
+ 	\begin{resumo}[Abstract]
+     	\begin{otherlanguage*}{english}
+-		This paper shows the development of the algorithm that is able to generate a efficient solution for \textit{Multiple Traveling Salesman Problem} (mTSP). An algorithm was developed a hybrid algorithm that use the Genetic Algorithm with \textit{Nearest Neighbor} algorithm, this last algorithm cited, generates the initial population for Genetic Algorithm. This hybrid algorithm gets a great performance at execution time and it can generate a good solution to solve \textit{Multiple Traveling Salesman Problem}. To valid the algorithm, the tests were compared against TSPLIB's results.
++		This work shows the development of the algorithm that is able to generate a efficient solution for \textit{Multiple Traveling Salesman Problem} (mTSP). An algorithm was developed a hybrid algorithm that use the Genetic Algorithm with \textit{Nearest Neighbor} algorithm, this last algorithm cited, generates the initial population for Genetic Algorithm. This hybrid algorithm gets a great performance at execution time and it can generate a good solution to solve \textit{Multiple Traveling Salesman Problem}. To valid the algorithm, the tests were compared against TSPLIB's results.
+ 
+         \vspace{\onelineskip}
+         \noindent
+@@ -1899,25 +1899,25 @@ Geração Tamanho
+ 		combustível, manutenção e tempo de entrega.
+ 
+ 		O crescimento das cidades e da complexidade rodoviária dificulta a análise da melhor rota a se percorrerem. Esse problema tende a ficar mais complexo conforme aumenta a quantidade de veículos que a empresa possui. Com isso, surge a necessidade de criar 
+-		\textit{softwares} cada vez mais robustos que resolvam o problema de roteirização de veículos, encontrando o melhor caminho para os veículos percorrer, realizando suas entregas nestes pontos já pré-estabelecidos.
++		\textit{softwares} que sejam mais rápidos e precisos em resolver o problema de roteirização de veículos, encontrando o melhor caminho para os veículos percorrer, realizando suas entregas nestes pontos já pré-estabelecidos.
+ 
+ 
+ 	\chapter{Metodologia}
+ 
+ 		O objetivo deste trabalho é desenvolver um novo algoritmo, ou otimizar um algoritmo, para encontrar a rota ótima\footnote{Quando a rota gerada por um algoritmo é o menor caminho possível, essa rota é considerada uma ``rota ótima''.} ou eficiente, para o problema dos múltiplos caixeiros viajantes, consumindo menos recurso computacional, mais especificamente o tempo de execução. 
+ 
+-		Antes de se iniciar o desenvolvimento do algoritmo híbrido, foi realizado o levantamento bibliográfico sobre o assunto e debatido como otimiza-lo com o orientador do projeto.
++		Antes de se iniciar o desenvolvimento do algoritmo híbrido, foi realizado o levantamento bibliográfico sobre o assunto e debatido como otimizá-lo com o orientador do projeto.
+ 
+ 		Foi utilizado a base de testes TSPLIB\footnote{Disponível em \url{http://www.math.uwaterloo.ca/tsp/world/countries.html}.} desenvolvida para o Problema do Caixeiro Viajante (TSP), já que não foi possível encontrar uma base de testes específica para o Problema dos Múltiplos Caixeiros Viajantes (mTSP). Esta base de testes foi utilizada como referência para medir o desempenho das rotas e o tempo de execução do algoritmo híbrido desenvolvido\footnote{O TSPLIB se baseia em informações geográficas do \textit{National Imagery and Mapping Agency}.} \cite{tsplib}.
+ 
+-		Para exemplificar, foi escolhido um teste da base TSPLIB que já possuí resultados de outros algoritmos, como a distância encontrada e o tempo que o algoritmo levou para calcular a rota. O teste foi submetido ao algoritmo híbrido e os resultados que ele gerou foram comparados com os resultados da base TSPLIB.
++		Para exemplificar, foi escolhido um teste da base TSPLIB que já possui resultados de outros algoritmos, como a distância encontrada e o tempo que o algoritmo levou para calcular a rota. O teste foi submetido ao algoritmo híbrido e os resultados que ele gerou foram comparados com os resultados da base TSPLIB.
+ 
+ 		Após esses testes foram utilizados diversas configurações de cenário, modificando os parâmetros do Algoritmo Genético, que serão explicados neste trabalho, comparando o tamanho das rotas e o tempo de execução do Algoritmo Genético ``tradicional'' com o algoritmo híbrido para verificar a eficiência e eficácia do algoritmo desenvolvido. 
+ 
+ 	
+ 	\chapter{Problema do Caixeiro Viajante - TSP}
+ 		O Problema do Caixeiro Viajante (\textit{Traveling Salesman Problem} - TSP) consiste em estabelecer uma rota para um \textbf{único} caixeiro, passando por cada vértice do grafo apenas uma vez e retornando ao vértice de partida. O número de rotas possíveis pode ser expressa por $(n-1)!$, sendo $n$ o número de pontos (vértices).
+-		O problema TSP é classificado como \textit{NP-Hard}\cite{0015-pdf}, ou seja, não existe algoritmo com limitação polinominal capaz de resolvê-lo \cite{0010-pdf}. 
++		O problema TSP é classificado como \textit{NP-Hard}~\cite{0015-pdf}, ou seja, não existe algoritmo com limitação polinominal capaz de resolvê-lo \cite{0010-pdf}. 
+ 		
+ 		Este problema pode ser formulado da seguinte forma:
+ 		\begin{equation}
+@@ -1979,7 +1979,7 @@ Geração Tamanho
+ 
+ 		\subsubsection{Cruzamento de Mapeamento Parcial - PMX} 
+ 			\label{Spmx}
+-			O operador de Cruzamento de Mapeamento Parcial (\textit{Partially-mapped crossover} - PMX)  seleciona e copia três genes do pai para um filho e completa o restante do cromossomo com os genes do outro pai, como a \textbf{figura~\ref{pmx}} ilustra.
++			O operador de Cruzamento de Mapeamento Parcial (\textit{Partially-mapped crossover} - PMX) escolhe dois indivíduos aleatoriamente e copia três genes seguidos, que são selecionados aleatoriamente, do pai para o filho e completa o restante do cromossomo com os genes do outro pai, como a \textbf{figura~\ref{pmx}} ilustra.
+ 
+ 			\begin{figure}[h]
+ 				\centering
+@@ -2019,27 +2019,25 @@ Geração Tamanho
+ 
+             O NN é um algoritmo simples de implementação, sua única tarefa é selecionar um vértice e verificar qual vértice ao seu redor esta mais próximo, e colocá-lo como próximo vértice á ser visitado. Após isso, esse passo é repetido para o vértice escolhido. 
+ 
+-            O Algoritmo NN possui uma complexidade $O(\frac{n^2-n}{2})$, pois faz a comparação com todos os vértices ainda não visitados \cite{NN}.
++            O algoritmo NN possui uma complexidade $O(\frac{n^2-n}{2})$, pois faz a comparação com todos os vértices ainda não visitados \cite{NN}.
++
++            Este algoritmo é utilizado na geração da população inicial, a quantidade de indivíduos gerados por este algoritmo é definido por um parâmetro chamado \textbf{AmountPopulationWithNN}. O valor deste parâmetro deve ser menor ou igual ao valor do parâmetro \textbf{InitialPopulation}, caso o valor seja menor, o restante dos indivíduos da população inicial será gerado de forma aleatória, se o valor for igual, toda a população inicial será gerada pelo algoritmo \textit{Nearest-Neighbor}.  
+ 			
+ 		\chapter{Estado da Arte}
+ 		
+-			Existem diversos trabalhos sobre a utilização de Algoritmos Genéticos na resolução do problema do TSP. \citeonline{0002-pdf}, implementaram uma solução para este problema, os Algoritmos Genéticos não são eficientes 
+-			na resolução do TSP em comparação com métodos determinísticos. Neste trabalho o Algoritmo Genético foi executado em um período de tempo maior e não encontrou a solução ótima em comparação com algoritmos determinísticos.
+-
+-			A solução apresentada por \citeonline{0006-pdf} propõe resolver os problemas de roteirização de 
++			Existem diversos trabalhos sobre a utilização de Algoritmos Genéticos na resolução do problema do TSP. A solução apresentada por \citeonline{0006-pdf} propõe resolver os problemas de roteirização de 
+ 			veículos com entregas fracionadas, problema clássico de roteirização de veículos e com 
+ 			frota heterogênea criando o algoritmo de roteirização de veículos com frota heterogênea, 
+-			restrições de janelas de tempo e entregas fracionadas(\textit{Heterogeneous Fleet Vehicle 
+-			Routing Problem with Time Windows and Split Deliveries} (HFVRPTWSD)) utilizando Algoritmo 
++			restrições de janelas de tempo e entregas fracionadas (\textit{Heterogeneous Fleet Vehicle 
++			Routing Problem with Time Windows and Split Deliveries} - HFVRPTWSD) utilizando Algoritmo 
+ 			Genético (AG).
+ 
+-			Na proposta  apresentada por \citeonline{0011-pdf} para a resolução do \textit{mTSP} com um depósito, foi criado um único cromossomo utilizando o método \textit{two-part}, que será explicado na próxima seção. Este método mostrou-se muito eficiente.
++			Na proposta  apresentada por \citeonline{0011-pdf} para a resolução do \textit{mTSP} com um depósito, foi criado um único cromossomo utilizando o método \textit{two-part}, que será explicado no próximo capítulo. Este método mostrou-se muito eficiente.
+ 
+ 			\citeonline{0005-pdf}  mostra que é possível calcular as rotas de múltiplos veículos utilizando AG para igualar o tempo 
+ 			de espera de encomendas de clientes, sendo que a variável ``menor tempo da rota'' não é levada em consideração.
+ 
+ 		
+-	
+ 		\chapter{Desenvolvimento}
+ 		
+ 		O Algoritmo Genético Híbrido (GANN - \textit{Genetic Algorithm with Nearest Neighbor}) proposto, utiliza os conceitos do Algoritmo Genético tradicional em conjunto com o algoritmo  \textit{Nearest-Neighbor} (NN).
+@@ -2105,7 +2103,7 @@ Geração Tamanho
+ 		\end{figure}
+ 
+ 
+-		O algoritmo \textit{Nearest-Neighbor} é utilizado para gerar a quantidade de indivíduo na população inicial definida pelo parâmetro \textit{AmountPopulationWithNN}. Para calcular o número de indivíduos que serão gerados aleatoriamente é utilizado este calculo:
++		O algoritmo \textit{Nearest-Neighbor} é utilizado para gerar a quantidade de indivíduo na população inicial definida pelo parâmetro \textit{AmountPopulationWithNN}. Para calcular o número de indivíduos que serão gerados aleatoriamente é utilizado este cálculo:
+ 
+ 			\begin{equation}
+ 				\label{cal_ind}
+@@ -2116,14 +2114,15 @@ Geração Tamanho
+ 
+         \section{Parâmetros}
+         
+-        Segundo \citeonline{0001-pdf} os parâmetros são importantes para analisar o comportamento do algoritmo e ajustá-lo para suprir as necessidades do problema. 
++        Segundo \citeonline{0001-pdf}, os parâmetros são importantes para analisar o comportamento do algoritmo e ajustá-lo para suprir as necessidades do problema. 
+         
+-        No algoritmo GA-NN foram implementados os seguintes parâmetros:
++        No algoritmo GANN foram implementados os seguintes parâmetros:
+          
+             \begin{itemize}
+                 \item \textbf{MaxPopulation:} Define o número máximo da população; 
+                 \item \textbf{InitialPopulation:} Define a quantidade inicial de indivíduos dentro da população, as rotas destes indivíduos serão gerados aleatoriamente. Caso o parâmetro \textit{InitialPopulationWithNN} for \textit{true}, 
+                 \item \textbf{InitialPopulationWithNN:} Se for igual a \textit{true} um indivíduo da população inicial será gerado utilizando o algoritmo NN;
++                \item \textbf{AmountPopulationWithNN:} Define o número de indivíduos que serão gerados na população inicial utilizando o algoritmo NN;
+                 \item \textbf{MutationRouteItself:} Se for igual a \textit{true} a mutação ocorrerá dentro da rota de um caixeiro viajante, ou seja, os pontos da rota de um caixeiro não poderão ser trocadas com outros caixeiros. Se for igual a \textit{false} os pontos poderão ser trocados entre os caixeiros;
+                 \item \textbf{NNsizePart:} Define o tamanho da área que os pontos serão gerados, por exemplo, se está variável possuir o valor 100, então será criada um espaço 100x100;
+                 \item \textbf{NNnPart:} Define o número de áreas que o espaço será dividido para a utilização do algoritmo NN;
+@@ -2139,7 +2138,7 @@ Geração Tamanho
+             \end{itemize}   
+ 
+ 		\section {\textit{Nearest-Neighbor} modificado}
+-
++            \label{NNMod}
+ 		O algoritmo \textit{Nearest-Neighbor} (NN) possui uma alta complexidade. Para resolver este problema, o plano cartesiano pode ser dividido em inúmeras áreas de tamanhos iguais, sendo que o número de áreas é definido pelo parâmetro \textit{NNnPart}, sendo sempre $NNnPart > 0$. 
+ 		Com isso, pode-se aplicar o NN em cada área, sendo assim, os pontos de uma área não podem ser comparados com os pontos de outras áreas reduzindo assim a complexidade para, na melhor hipótese, aproximadamente, $O(\frac{n^2-kn}{2k^2}k)$, sendo $n$ o número total de pontos e $k$ o número de áreas, e na pior hipótese $O(\frac{n^2-n}{2})$, quando todos os pontos estão em apenas uma área. 
+ 		
+@@ -2243,6 +2242,8 @@ Geração Tamanho
+ 			\end{figure}
+ 			
+ 			\end{center}
++
++            No algoritmo híbrido desenvolvido neste trabalho, o número de pontos serão distribuídos entre os caixeiros de forma igual caso o indivíduo seja gerado aleatoriamente, se o indivíduo foi gerado pelo algoritmo \textit{Nearest Neighbor} modificado, as áreas que este algoritmo gerou, explicado na seção \ref{NNMod}, serão distribuídas de forma igual, permitindo que cada caixeiro fique responsável por visitar uma mesma quantidade de áreas que os outros.
+ 		       
+ 	   	
+ 	   	\section{Avaliação do Indivíduo (\textit{fitness})}
+@@ -2256,7 +2257,7 @@ Geração Tamanho
+ 
+ 		Sendo que a variável $d$ é a distancia entre dois vértices do grafo, o valor $d$ se torna o valor do peso da aresta que liga os dois vértices.
+ 
+-		O calculo da distância total ($dt$) é dado por:
++		O cálculo da distância total ($dt$) é dado por:
+ 
+ 		\begin{equation}
+ 			d = \sum_{j=1}^{c} \sum_{i=1}^{a_j-1} \sqrt{(vcx_{ji}-vcx_{ji+1})^2 + (vcy_{ji}-vcy_{ji+1})^2}
+@@ -2275,7 +2276,7 @@ Geração Tamanho
+ 
+ 		A variável $c$ representa o número de caixeiros viajantes, e a variável $q$ representa o valor do último vértice do caixeiro.
+ 
+-		Na \textbf{equação~\ref{eq-ecli1}} é calculado a distância das conexões entre os vértices, não considerando o depósito. Já na \textbf{equação~\ref{eq-ecli2}} é adicionado a distância do depósito para o primeiro e o último vértice da rota de cada caixeiro, finalizando o calculo da distância total.
++		Na \textbf{equação~\ref{eq-ecli1}} é calculado a distância das conexões entre os vértices, não considerando o depósito. Já na \textbf{equação~\ref{eq-ecli2}} é adicionado a distância do depósito para o primeiro e o último vértice da rota de cada caixeiro, finalizando o cálculo da distância total.
+ 
+ 		O algoritmo considera o melhor indivíduo, aquele que tiver a menor distância total. 
+ 
+@@ -2295,8 +2296,11 @@ Geração Tamanho
+ 		
+ 		Para mensurar o desempenho do algoritmo foram realizados diversos teste com parâmetros diferentes, levando em consideração o tamanho da rota e o tempo de execução. A base de testes TSPLIB foi utilizada apenas para validar o algoritmo, pois esta base apenas contém testes para o problema do caixeiro viajante, sendo que o algoritmo proposto tenta solucionar o problema dos múltiplos caixeiros viajantes. 
+ 		
+-		O algoritmo foi implementado utilizando a linguagem C++ e os resultado gráficos das rotas foram gerados pela biblioteca BITMAPIMG\footnote{A biblioteca BITMAPIMG foi desenvolvida pelo autor e está disponível em \url{https://github.com/VictorCarlquist/BITMAPIMG}.}.
+-		O computador que executou os testes possui processador Intel\textregistered Core\texttrademark ~i5 2,4Hz, 4GB de memória RAM. É necessário ressaltar que os tempos de execuções entre os resultados da base de testes TSPLIB e o algoritmo desenvolvido pelo autor possuem discrepâncias, pois as arquiteturas dos processadores são diferentes, exceto o teste PR2392, portanto, os testes entre esses resultados são utilizados para, apenas, validar o algoritmo.
++        \subsection{Requisitos de Sistema}
++
++		O algoritmo foi implementado utilizando a linguagem C++ e compilado com o compilador GCC versão 4.8, utilizando os parâmetros \textit{-pthread -O3 -std=c++11}. Os resultados gráficos das rotas foram gerados pela biblioteca BITMAPIMG\footnote{A biblioteca BITMAPIMG foi desenvolvida pelo autor e está disponível em \url{https://github.com/VictorCarlquist/BITMAPIMG}.}. Foi desenvolvido esta biblioteca pois o \textit{software} \textit{gnuplot} utilizado inicialmente para gerar as figuras não tinha um bom desempenho para plotar mais de 100.000 pontos, e os testes estavam consumindo muito tempo para plotar a imagem dos resultados e, também,  não foi encontrado uma biblioteca para plotar as figuras de uma maneira simples. Portanto, foi desenvolvido a biblioteca BITMAPIMG com o objetivo de plotar linhas e pontos de maneira simples, com isso foi possível gerar as figuras mais rapidamente.
++
++		O computador que executou os testes possui processador Intel\textregistered Core\texttrademark ~i5 2,4GHz, 4GB de memória RAM. É necessário ressaltar que os tempos de execuções entre os resultados da base de testes TSPLIB e o algoritmo desenvolvido pelo autor possuem discrepâncias, pois as arquiteturas dos processadores são diferentes, exceto no teste PR2392, portanto, os testes entre esses resultados são utilizados para, apenas, validar o algoritmo.
+ 
+ 		\subsection{Resultados do Problema do Caixeiro Viajante (TSP)}
+ 
+@@ -2485,21 +2489,11 @@ Geração Tamanho
+ 				\label{figthread}
+ 			\end{figure}
+ 
+-			A \textbf{figura~\ref{figthread}} mostra que nos 4 testes realizados, a utilização das \textit{threads} não tem impacto no tempo de execução, a razão deste resultado precisará ser investigado em um trabalho futuro, pois a implementação do algoritmo está tendo um falso paralelismo, pois o tempo de execução sempre continua inalterado, mesmo aumentando o número de \textit{threads}.
++			A \textbf{figura~\ref{figthread}} mostra que nos 4 testes realizados, a utilização das \textit{threads} não tem impacto no tempo de execução, a razão deste resultado precisará ser investigado em um trabalho futuro, pois a implementação do algoritmo está tendo um falso paralelismo, pois o tempo de execução sempre continua inalterado, mesmo aumentando o número de \textit{threads}, ou seja, dividindo a carga de trabalho entre os núcleos do processador.
+ 
+-			
+-	\chapter{Trabalhos Futuros}
+-
+-	Como trabalho futuro, poderiam ser adicionadas novas estratégias para gerar a população inicial e realização dos cruzamentos dos cromossomos. Com essas implementações a probabilidade do Algoritmo Genético evoluir a população poderia aumentar.
+-
+-	Uma segunda abordagem para otimizar a solução poderia ser adicionar novas análises ao algoritmo \textit{Nearest Neighbor}, fazendo com que a análise de seus vizinhos seja melhor gerenciada, podendo eliminar o Algoritmo Genético.
+-
+-	A implementação de \textit{threads} utilizando GPUs (\textit{Graphics Processing Unit}) poderia deixar mais rápido o algoritmo, já que cada geração do algoritmo genético ou a otimização de cada parte (área) do \textit{Nearest Neighbor} pode ocorrer separadamente. 
+-	
+-
+-	\chapter{Conclusão}
++	\chapter{Conclusão e trabalhos futuros}
+ 		
+-	O Algoritmo Híbrido desenvolvido apresentou resultados satisfatórios para o problema dos múltiplos caixeiros por conseguir gerar rotas pequenas com baixo tempo de execução. Pode-se notar nas imagens das rotas que ainda é possível gerar rotas menores, mostrando que o algoritmo ainda pode ser otimizado.
++	O Algoritmo Híbrido desenvolvido apresentou um bom tempo de execução para gerar uma solução para o problema dos múltiplos caixeiros. Pode-se notar nas imagens das rotas que ainda é possível gerar rotas menores, mostrando que o algoritmo ainda pode ser otimizado.
+ 
+     Como apresentado nesta pesquisa, o Algoritmo Genético mostrou-se eficiente em uma população gerada aleatoriamente, mas com a utilização do algoritmo \textit{Nearest Neighbor} modificado, para gerar a população inicial, o Algoritmo Genético não consegue evoluir a população com eficácia, pois são necessárias muitas gerações para haver uma melhoria na rota.
+ 
+@@ -2507,9 +2501,14 @@ Geração Tamanho
+ 
+     Apesar de não ser o objetivo do algoritmo resolver o problema de um caixeiro viajante, ele também se mostrou eficiente em encontrar uma rota com tempo de execução pequeno.
+ 
+-    Portanto, este trabalho demonstra que um algoritmo híbrido pode ser uma boa abordagem para solucionar o Problema dos Múltiplos Caixeiros Viajantes.  
++    Portanto, este trabalho demonstra que um algoritmo híbrido pode ser utilizado para solucionar o Problema dos Múltiplos Caixeiros Viajantes.  
++
++    Como trabalho futuro, poderiam ser adicionadas novas estratégias para gerar a população inicial e realização dos cruzamentos dos cromossomos. Com essas implementações a probabilidade do Algoritmo Genético evoluir a população poderia aumentar.
+ 
++    Uma segunda abordagem para otimizar a solução poderia ser adicionar novas análises ao algoritmo \textit{Nearest Neighbor}, fazendo com que a análise de seus vizinhos seja melhor gerenciada, podendo eliminar o Algoritmo Genético.
+ 
++    A implementação de \textit{threads} utilizando GPUs (\textit{Graphics Processing Unit}) poderia deixar mais rápido o algoritmo, já que cada geração do algoritmo genético ou a otimização de cada parte (área) do \textit{Nearest Neighbor} pode ocorrer separadamente.
++    
+ %\begin{comment}
+ 	%\section{Modelagem real}
+ 	%\chapter{Conclusão}
+@@ -2524,5 +2523,6 @@ Geração Tamanho
+ 	\lstinputlisting{../code/algo_genetico_comum/agc/agc/ga.h}
+ 	\chapter{Código Fonte - ga.cpp}
+ 	\lstinputlisting{../code/algo_genetico_comum/agc/agc/ga.cpp}
++    \newpage
+ 
+ \end{document}
