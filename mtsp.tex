@@ -1,4 +1,4 @@
-\documentclass[12pt,openright,a4paper,oneside]{tcc}
+\documentclass[12pt,openright,a4paper,twoside]{tcc}
 \usepackage{fontspec}
 \usepackage[alf]{abntex2cite}
 \usepackage{lastpage}
@@ -1883,7 +1883,7 @@ Geração Tamanho
 
         \vspace{\onelineskip}
         \noindent
-        \textbf{Key-words}: Multiple traveling salesman problem, genetic algorithm,  hybrid algorithm, optimization.
+        \textbf{Key-words}: Multiple traveling salesman problem, genetic algorithm, hybrid algorithm, optimization.
 		\end{otherlanguage*}
 	\end{resumo}
 	
@@ -1899,12 +1899,12 @@ Geração Tamanho
 		combustível, manutenção e tempo de entrega.
 
 		O crescimento das cidades e da complexidade rodoviária dificulta a análise da melhor rota a se percorrerem. Esse problema tende a ficar mais complexo conforme aumenta a quantidade de veículos que a empresa possui. Com isso, surge a necessidade de criar 
-		\textit{softwares} que sejam mais rápidos e precisos em resolver o problema de roteirização de veículos, encontrando o melhor caminho para os veículos percorrer, realizando suas entregas nestes pontos já pré-estabelecidos.
+		\textit{softwares} que sejam mais rápidos e precisos em resolver o problema de roteirização de veículos, encontrando o melhor caminho para os veículos percorrerem, realizando suas entregas nestes pontos já preestabelecidos.
 
 
 	\chapter{Metodologia}
 
-		O objetivo deste trabalho é desenvolver um novo algoritmo, ou otimizar um algoritmo, para encontrar a rota ótima\footnote{Quando a rota gerada por um algoritmo é o menor caminho possível, essa rota é considerada uma ``rota ótima''.} ou eficiente, para o problema dos múltiplos caixeiros viajantes, consumindo menos recurso computacional, mais especificamente o tempo de execução. 
+		O objetivo deste trabalho é desenvolver um novo algoritmo, ou otimizar um algoritmo, para encontrar a rota ótima\footnote{Quando a rota gerada por um algoritmo é o menor caminho possível, essa rota é considerada uma ``rota ótima''.} ou eficiente, para o problema dos múltiplos caixeiros viajantes, consumindo menos recurso computacional, mais especificamente o tempo de execução.
 
 		Antes de se iniciar o desenvolvimento do algoritmo híbrido, foi realizado o levantamento bibliográfico sobre o assunto e debatido como otimizá-lo com o orientador do projeto.
 
@@ -1917,7 +1917,7 @@ Geração Tamanho
 	
 	\chapter{Problema do Caixeiro Viajante - TSP}
 		O Problema do Caixeiro Viajante (\textit{Traveling Salesman Problem} - TSP) consiste em estabelecer uma rota para um \textbf{único} caixeiro, passando por cada vértice do grafo apenas uma vez e retornando ao vértice de partida. O número de rotas possíveis pode ser expressa por $(n-1)!$, sendo $n$ o número de pontos (vértices).
-		O problema TSP é classificado como \textit{NP-Hard}~\cite{0015-pdf}, ou seja, não existe algoritmo com limitação polinominal capaz de resolvê-lo \cite{0010-pdf}. 
+		O problema TSP é classificado como \textit{NP-Hard}~\cite{0015-pdf}, ou seja, não existe algoritmo com limitação polinomial capaz de resolvê-lo \cite{0010-pdf}. 
 		
 		Este problema pode ser formulado da seguinte forma:
 		\begin{equation}
@@ -2103,7 +2103,7 @@ Geração Tamanho
 		\end{figure}
 
 
-		O algoritmo \textit{Nearest-Neighbor} é utilizado para gerar a quantidade de indivíduo na população inicial definida pelo parâmetro \textit{AmountPopulationWithNN}. Para calcular o número de indivíduos que serão gerados aleatoriamente é utilizado este cálculo:
+		O algoritmo \textit{Nearest-Neighbor} é utilizado para gerar a quantidade de indivíduos na população inicial definida pelo parâmetro \textit{AmountPopulationWithNN}. Para calcular o número de indivíduos que serão gerados aleatoriamente é utilizado este cálculo:
 
 			\begin{equation}
 				\label{cal_ind}
@@ -2284,7 +2284,7 @@ Geração Tamanho
 
 			O programa proposto utiliza o operador de cruzamento PMX, descrito no capítulo (\ref{Spmx}). 
 			
-			A cada iteração (geração) é realizado um cruzamento, para isso é selecionado, aleatoriamente, dois cromossomos da população. No cruzamento são gerados dois novos indivíduos, esses indivíduos serão avalizados pela função \textit{fitness} e inseridos na população.
+			A cada iteração (geração) é realizado um cruzamento, para isso são selecionados, aleatoriamente, dois cromossomos da população. No cruzamento são gerados dois novos indivíduos, esses indivíduos serão avalizados pela função \textit{fitness} e inseridos na população.
 
 		\section{Mutação}
 
@@ -2490,7 +2490,7 @@ Geração Tamanho
 				\label{figthread}
 			\end{figure}
 
-            O algoritmo \textit{Nearest Neighbor} divide o plano cartesiano em diversas áreas, assim, cada área pode ser processada por uma \textit{thread}, podendo aumentar o desempenho do algoritmo na geração da população inicial. Como a \textbf{figura~\ref{figthread}} demonstra, nos 4 testes realizados, a utilização das \textit{threads} não teve impacto no tempo de execução, pois a implementação do algoritmo está tendo um falso paralelismo que pode estar sendo causado pelo acesso a memória RAM (\textit{Random Access Memory}) pelas múltiplas \textit{threads}, mas a razão deste resultado precisará ser investigado em um trabalho futuro ser um problema não trivial.  
+            O algoritmo \textit{Nearest Neighbor} divide o plano cartesiano em diversas áreas, assim, cada área pode ser processada por uma \textit{thread}, podendo aumentar o desempenho do algoritmo na geração da população inicial. Como a \textbf{figura~\ref{figthread}} demonstra, nos 4 testes realizados, a utilização das \textit{threads} não teve impacto no tempo de execução, pois a implementação do algoritmo está tendo um falso paralelismo que pode estar sendo causado pelo acesso a memória RAM (\textit{Random Access Memory}) pelas múltiplas \textit{threads}, mas a razão deste resultado precisará ser investigado em um trabalho futuro, pois não é um problema trivial.  
 
 
 	\chapter{Conclusão e trabalhos futuros}
@@ -2525,6 +2525,5 @@ Geração Tamanho
 	\lstinputlisting{../code/algo_genetico_comum/agc/agc/ga.h}
 	\chapter{Código Fonte - ga.cpp}
 	\lstinputlisting{../code/algo_genetico_comum/agc/agc/ga.cpp}
-    \newpage
 
 \end{document}
