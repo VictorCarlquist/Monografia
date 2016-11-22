@@ -59,7 +59,8 @@ brazil % o último idioma é o principal do documento
 %   ALTERA O TAMANHO DAS FONTES DOS CAPITULOS, SECOES ETC.      %
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
 
-\renewcommand{\ABNTEXchapterfont}{\sffamily}
+%\renewcommand{\ABNTEXchapterfont}{\sffamily}
+\renewcommand{\ABNTEXchapterfont}{}
 \renewcommand{\ABNTEXchapterfontsize}{\normalsize\bfseries}
 
 \renewcommand{\ABNTEXpartfont}{\ABNTEXchapterfont}
@@ -176,26 +177,32 @@ brazil % o último idioma é o principal do documento
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
 %   ALTERA A CRIACAO DA CAPA
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+%   ALTERA A CRIACAO DA CAPA
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
-    \includegraphics[width=10cm, keepaspectratio]{img/ifsp-cjo.pdf}
+    {\bfseries\large\MakeTextUppercase\imprimirinstituicao}
     
     \vspace*{1cm}
     
-    {\ABNTEXchapterfont\normalsize\MakeTextUppercase\imprimirautor}
+    %{\ABNTEXchapterfont\normalsize\MakeTextUppercase\imprimirautor}
+    {\large\MakeTextUppercase\imprimirautor}
 
     \vfill
-    {\ABNTEXchapterfont\bfseries\large\MakeTextUppercase\imprimirtitulo}
+    %{\ABNTEXchapterfont\bfseries\large\MakeTextUppercase\imprimirtitulo}
+    {\bfseries\large\MakeTextUppercase\imprimirtitulo}
     \vfill
     
-    \ABNTEXchapterfont\normalsize\MakeTextUppercase\imprimirlocal
+    \large\MakeTextUppercase\imprimirlocal
 
-    \ABNTEXchapterfont\normalsize\imprimirano
+    \large\imprimirano
     
     \vspace*{1cm}
   \end{capa}
 }
+
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
 %   ALTERA A CRIACAO DA FOLHA DE ROSTO

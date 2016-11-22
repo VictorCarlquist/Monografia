@@ -1,11 +1,11 @@
-commit f3bc589c7e3dddfc4cdb91482afaf3a801c2f990
+commit e155ccd2d2179cb72220972abe32411b9f2f5b2b
 Author: Victor Carlquist <victorcarlquist@gmail.com>
-Date:   Thu Jan 29 20:50:15 2015 -0200
+Date:   Thu Jan 29 20:57:38 2015 -0200
 
     ajustes
 
 diff --git a/mtsp.tex b/mtsp.tex
-index 8cf7cd4..2e34cbc 100644
+index 8cf7cd4..20577c7 100644
 --- a/mtsp.tex
 +++ b/mtsp.tex
 @@ -1868,8 +1868,8 @@ Geração Tamanho
@@ -194,7 +194,7 @@ index 8cf7cd4..2e34cbc 100644
  			\end{figure}
  
 -			A \textbf{figura~\ref{figthread}} mostra que nos 4 testes realizados, a utilização das \textit{threads} não tem impacto no tempo de execução, a razão deste resultado precisará ser investigado em um trabalho futuro, pois a implementação do algoritmo está tendo um falso paralelismo, pois o tempo de execução sempre continua inalterado, mesmo aumentando o número de \textit{threads}.
-+            O algoritmo \textit{Nearest Neighbor} divide o plano cartesiano em diversas áreas, assim, cada área pode ser processada por uma \textit{thread}, podendo aumentar o desempenho do algoritmo na geração da população inicial. Como a \textbf{figura~\ref{figthread}} demonstra, nos 4 testes realizados, a utilização das \textit{threads} não teve impacto no tempo de execução, pois a implementação do algoritmo está tendo um falso paralelismo que pode estar sendo causado pelo acesso a memória RAM (\textit{Random Access Memory}) pelas múltiplas \texit{threads}, mas a razão deste resultado precisará ser investigado em um trabalho futuro ser um problema não trivial.  
++            O algoritmo \textit{Nearest Neighbor} divide o plano cartesiano em diversas áreas, assim, cada área pode ser processada por uma \textit{thread}, podendo aumentar o desempenho do algoritmo na geração da população inicial. Como a \textbf{figura~\ref{figthread}} demonstra, nos 4 testes realizados, a utilização das \textit{threads} não teve impacto no tempo de execução, pois a implementação do algoritmo está tendo um falso paralelismo que pode estar sendo causado pelo acesso a memória RAM (\textit{Random Access Memory}) pelas múltiplas \textit{threads}, mas a razão deste resultado precisará ser investigado em um trabalho futuro ser um problema não trivial.  
  
 -			
 -	\chapter{Trabalhos Futuros}
