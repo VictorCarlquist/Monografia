@@ -3,7 +3,7 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{1.53 }
+\abntbstabout{v-1.9.2 }
 
 \bibitem[ARNBORG e PROSKUROWSKI 1989]{0015-pdf}
 \abntrefinfo{ARNBORG e PROSKUROWSKI}{ARNBORG; PROSKUROWSKI}{1989}
@@ -36,43 +36,69 @@ Tese (Doutorado) --- Virginia Polytechnic Institute and State University,
 \bibitem[Carvalho 2013]{0001-pdf}
 \abntrefinfo{Carvalho}{CARVALHO}{2013}
 {CARVALHO, A.~P. de~Leon F.~de. \emph{Algoritmos Genéticos}. 2013.
-Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/www2\-.icmc\-.usp\-.br\-/\~{}andre\-/research\-/genetic\-/$>$}{http://www2.icmc.usp.br/~andre/research/genetic/}.}
+Dispon{\'\i}vel em: \url{http://www2.icmc.usp.br/~andre/research/genetic/}.}
 
 \bibitem[Correia 2003]{0008-pdf}
 \abntrefinfo{Correia}{CORREIA}{2003}
 {CORREIA, M. Algoritmos genéticos.
 \emph{dosalgarves}, p. 36--43, junho 2003.}
 
+\bibitem[Davendra 2010]{TravelingTheory}
+\abntrefinfo{Davendra}{DAVENDRA}{2010}
+{DAVENDRA, D. \emph{Traveling Salesman Problem, Theory, and Applications}.
+  [S.l.]: InTech, 2010.}
+
+\bibitem[Dias e Kuwahara 2009]{meioAmbiente}
+\abntrefinfo{Dias e Kuwahara}{DIAS; KUWAHARA}{2009}
+{DIAS, I.~P. da S.; KUWAHARA, M.~Y. Sistema de transporte público urbano da
+  rmsp e seus impactos ambientais.
+\emph{Jovens Pesquisadores}, Janeiro 2009.}
+
+\bibitem[Helsgaun 2007]{LKH}
+\abntrefinfo{Helsgaun}{HELSGAUN}{2007}
+{HELSGAUN, K. \emph{An Effective Implementation of K-opt Moves for the
+  Lin-Kernighan TSP Heuristic}. [S.l.]: Roskilde University, 2007.}
+
+\bibitem[Holland 1975]{john}
+\abntrefinfo{Holland}{HOLLAND}{1975}
+{HOLLAND, J.~H. \emph{Adaptation in Natural and Artificial Systems}. [S.l.]:
+  University of Michigan Press, 1975.}
+
+\bibitem[Lopes 2009]{malvezzi}
+\abntrefinfo{Lopes}{LOPES}{2009}
+{LOPES, A.~M.
+\emph{Uma Abordagem Multiobjetivo para o Problema de Corte de Estoque
+  Unidimensional}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Estadual Paulista, 2009.}
+
 \bibitem[Malaquias 2006]{0012-pdf}
 \abntrefinfo{Malaquias}{MALAQUIAS}{2006}
 {MALAQUIAS, N. G.~L.
 \emph{Uso dos algoritmos genéticos para a otimização de rotas de
   distribuição}.
-Disserta\c{c}\~ao (Mestrado) --- Universidade Federal de Uberlândia, 2006.}
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal de Uberlândia, 2006.}
 
 \bibitem[Miyazawa 2002]{NN}
 \abntrefinfo{Miyazawa}{MIYAZAWA}{2002}
 {MIYAZAWA, F.~K. \emph{Otimização}. 2002.
-Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/www\-.ic\-.unicamp\-.br\-/\~{}fkm\-/lectures\-/otimo\-.pdf$>$}{http://www.ic.unicamp.br/~fkm/lectures/otimo.pdf}.}
-
-\bibitem[Pacheco e Fukasawa 2010]{0002-pdf}
-\abntrefinfo{Pacheco e Fukasawa}{PACHECO; FUKASAWA}{2010}
-{PACHECO, M.~A.; FUKASAWA, R. Resolução do problema do entregador viajante.
-\emph{Revista de Inteligência Computacional Aplicada}, n.~4, 2010.}
+Dispon{\'\i}vel em: \url{http://www.ic.unicamp.br/~fkm/lectures/otimo.pdf}.}
 
 \bibitem[Research 2014]{tsplib}
 \abntrefinfo{Research}{RESEARCH}{2014}
 {RESEARCH, O. of N. \emph{The Traveling Salesman Problem}. 2014.
-Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/www\-.math\-.uwaterloo\-.ca\-/tsp\-/index\-.html$>$}{http://www.math.uwaterloo.ca/tsp/index.html}.}
+Dispon{\'\i}vel em: \url{http://www.math.uwaterloo.ca/tsp/index.html}.}
 
-\bibitem[Sedighpour et al. 2011]{0011-pdf}
-\abntrefinfo{Sedighpour et al.}{SEDIGHPOUR et al.}{2011}
+\bibitem[Sedighpour, Yousefikhoshbakht e Darani 2011]{0011-pdf}
+\abntrefinfo{Sedighpour, Yousefikhoshbakht e Darani}{SEDIGHPOUR;
+  YOUSEFIKHOSHBAKHT; DARANI}{2011}
 {SEDIGHPOUR, M.; YOUSEFIKHOSHBAKHT, M.; DARANI, N.~M. An effective genetic
   algorithm for solving the multiple traveling salesman problem.
 \emph{Journal of Optimization in Industrial Engineering}, p. 73--79, 2011.}
+
+\bibitem[Silberschatz 2008]{THREAD}
+\abntrefinfo{Silberschatz}{SILBERSCHATZ}{2008}
+{SILBERSCHATZ, A. \emph{Sistemas operacionais com Java}. [S.l.]: Elsevier,
+  2008.}
 
 \bibitem[Wu 2007]{0005-pdf}
 \abntrefinfo{Wu}{WU}{2007}

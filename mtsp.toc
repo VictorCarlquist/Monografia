@@ -1,27 +1,57 @@
+\changetocdepth {4}
 \select@language {brazil}
-\contentsline {chapter}{Lista de Figuras}{}{chapter*.1}
-\contentsline {chapter}{Resumo}{}{chapter*.2}
-\contentsline {chapter}{Abstract}{}{chapter*.3}
-\contentsline {chapter}{\numberline {1}Introdução}{8}{chapter.abstract.1}
-\contentsline {chapter}{\numberline {2}Metodologia}{9}{chapter.abstract.2}
-\contentsline {chapter}{\numberline {3}Problema do Caixeiro Viajante - TSP)}{10}{chapter.abstract.3}
-\contentsline {section}{\numberline {3.1}Problema dos Múltiplos Caixeiros Viajantes }{11}{section.abstract.3.1}
-\contentsline {chapter}{\numberline {4}Algoritmos genéticos}{12}{chapter.abstract.4}
-\contentsline {section}{\numberline {4.1}Operadores de cruzamento}{13}{section.abstract.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Cruzamento de Mapeamento Parcial - PMX}{13}{subsection.abstract.4.1.1}
-\contentsline {section}{\numberline {4.2}Operador de mutação}{14}{section.abstract.4.2}
-\contentsline {section}{\numberline {4.3}Algoritmo Genético Híbrido}{14}{section.abstract.4.3}
-\contentsline {chapter}{\numberline {5}Estado da Arte}{15}{chapter.abstract.5}
-\contentsline {chapter}{\numberline {6}Algoritmo \textit {Nearest-Neighbor} (NN)}{16}{chapter.abstract.6}
-\contentsline {chapter}{\numberline {7}Desenvolvimento}{17}{chapter.abstract.7}
-\contentsline {section}{\numberline {7.1}Estrutura do cromossomo (indivíduo) - \textit {two-part}}{17}{section.abstract.7.1}
-\contentsline {section}{\numberline {7.2}Avaliação do Indivíduo (\textit {fitness})}{18}{section.abstract.7.2}
-\contentsline {section}{\numberline {7.3}Cruzamento}{18}{section.abstract.7.3}
-\contentsline {section}{\numberline {7.4}Mutação}{18}{section.abstract.7.4}
-\contentsline {section}{\numberline {7.5}Parâmetros}{18}{section.abstract.7.5}
-\contentsline {section}{\numberline {7.6}Desempenho}{19}{section.abstract.7.6}
-\contentsline {chapter}{\numberline {8}Conclusão}{26}{chapter.abstract.8}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{27}{chapter.abstract.8}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Código Fonte - main.cpp}{28}{chapter.appendix.A}
-\contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} Código Fonte - ga.h}{31}{chapter.appendix.B}
-\contentsline {chapter}{Ap\^endice{} C{} -$\tmspace -\thinmuskip {.1667em}$-{} Código Fonte - ga.cpp}{33}{chapter.appendix.C}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdução}}{10}{chapter.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Metodologia}}{11}{chapter.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Problema do Caixeiro Viajante - TSP}}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Problema dos Múltiplos Caixeiros Viajantes}{12}{section.3.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Algoritmos Evolutivos}}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Algoritmo Genético}{14}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Operadores de cruzamento}{15}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Cruzamento de Mapeamento Parcial - PMX}{15}{subsubsection.4.1.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Operador de mutação}{16}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Algoritmo Genético Híbrido}{16}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Algoritmo \textit {Nearest-Neighbor} (NN)}{17}{subsection.4.1.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Estado da Arte}}{18}{chapter.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Desenvolvimento}}{19}{chapter.6}
+\contentsline {section}{\numberline {6.1}Parâmetros}{20}{section.6.1}
+\contentsline {section}{\numberline {6.2}\textit {Nearest-Neighbor} modificado}{21}{section.6.2}
+\contentsline {section}{\numberline {6.3}Estrutura do cromossomo (indivíduo) - \textit {two-part}}{22}{section.6.3}
+\contentsline {section}{\numberline {6.4}Avaliação do Indivíduo (\textit {fitness})}{23}{section.6.4}
+\contentsline {section}{\numberline {6.5}Cruzamento}{23}{section.6.5}
+\contentsline {section}{\numberline {6.6}Mutação}{24}{section.6.6}
+\contentsline {section}{\numberline {6.7}Desempenho}{24}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Requisitos de Sistema}{24}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Resultados do Problema do Caixeiro Viajante (TSP)}{25}{subsection.6.7.2}
+\contentsline {subsubsection}{\numberline {6.7.2.1}GANN \textit {versus} LKH}{29}{subsubsection.6.7.2.1}
+\contentsline {subsection}{\numberline {6.7.3}Resultados do Problema dos Múltiplos Caixeiros Viajantes (mTSP)}{30}{subsection.6.7.3}
+\contentsline {subsubsection}{\numberline {6.7.3.1}Múltiplos Caixeiros - GANN}{30}{subsubsection.6.7.3.1}
+\contentsline {subsubsection}{\numberline {6.7.3.2}Múltiplos Caixeiros - GA}{31}{subsubsection.6.7.3.2}
+\contentsline {subsection}{\numberline {6.7.4}Threads}{31}{subsection.6.7.4}
+\contentsline {subsubsection}{\numberline {6.7.4.1}\textit {Threads} (GANN)}{32}{subsubsection.6.7.4.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclusão e trabalhos futuros}}{33}{chapter.7}
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Refer\^encias}{34}{section*.24}
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Código Fonte - main.cpp}}{35}{appendix.A}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Código Fonte - ga.h}}{41}{appendix.B}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Código Fonte - ga.cpp}}{43}{appendix.C}
